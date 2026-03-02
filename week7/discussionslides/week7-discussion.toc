@@ -1,0 +1,23 @@
+\beamer@sectionintoc {1}{Week 7 Goals}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Agenda}{3}{0}{1}
+\beamer@sectionintoc {2}{Poisson Rate and Window Size}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Time-Interval Example}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Region-Size Example}{5}{0}{2}
+\beamer@sectionintoc {3}{Integration Methods (Quick Review)}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Core Techniques}{6}{0}{3}
+\beamer@sectionintoc {4}{Continuous Piecewise Example}{7}{0}{4}
+\beamer@subsectionintoc {4}{1}{Define a PDF}{7}{0}{4}
+\beamer@subsectionintoc {4}{2}{Derive CDF from PDF}{8}{0}{4}
+\beamer@subsectionintoc {4}{3}{Recover PDF from CDF}{9}{0}{4}
+\beamer@subsectionintoc {4}{4}{Compute Mean and Variance}{10}{0}{4}
+\beamer@sectionintoc {5}{Practice (Quick Drills)}{11}{0}{5}
+\beamer@subsectionintoc {5}{1}{Practice 1: Poisson Time Scaling}{11}{0}{5}
+\beamer@subsectionintoc {5}{2}{Practice 2: Poisson Region Scaling}{13}{0}{5}
+\beamer@subsectionintoc {5}{3}{Practice 3: Integration Method Choice}{15}{0}{5}
+\beamer@subsectionintoc {5}{4}{Practice 4: CDF from Piecewise PDF}{17}{0}{5}
+\beamer@subsectionintoc {5}{5}{Practice 5: Probability by Area}{19}{0}{5}
+\beamer@sectionintoc {6}{Class Reminder}{21}{0}{6}
+\beamer@subsectionintoc {6}{1}{Exam Questions Policy}{21}{0}{6}
+\beamer@sectionintoc {7}{Wrap-Up}{22}{0}{7}
+\beamer@subsectionintoc {7}{1}{Take-Home Messages}{22}{0}{7}
+\beamer@sectionintoc {8}{Attendance Check}{23}{0}{8}

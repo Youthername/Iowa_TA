@@ -1,0 +1,381 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+\usecolortheme{uiowa}
+\useoutertheme[subsection=true]{smoothbars}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+
+\title[STAT 2020 Discussion \hspace{4em} \insertframenumber/\inserttotalframenumber]
+{STAT 2020 Discussion \\ Week 6}
+
+\author[Shuo Li]{Shuo Li}
+\date{\today}
+\institute[The University of Iowa]{The University of Iowa\\
+Department of Statistics and Actuarial Science}
+
+% \logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%------------------------------------------------
+\begin{frame}{Index (Outline)}
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+% ==============================
+\section{Admin \& Reminders}
+% ==============================
+
+
+\subsection{Distribution Identification}
+
+\begin{frame}{Key Skill for Quizzes/Exams}
+\begin{itemize}
+  \item On future exams/quizzes, you may \alert{not be told} which distribution to use.
+  \item You should be able to:
+  \begin{itemize}
+    \item identify the correct distribution,
+    \item state the \textbf{range} of $X$,
+    \item compute PMF, mean, and variance.
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+% ==============================
+\section{Key Distributions}
+% ==============================
+
+\subsection{Quick Identification (Flow)}
+
+\begin{frame}{How to Identify the Distribution (Quick Flow)}
+\begin{itemize}
+  \item \textbf{Fixed number of trials $n$?}
+  \begin{itemize}
+    \item Yes $\Rightarrow$ Binomial (with replacement / independent) or Hypergeometric (without replacement)
+    \item No  $\Rightarrow$ Geometric / Negative Binomial (waiting time for successes)
+  \end{itemize}
+  \item \textbf{Without replacement?} $\Rightarrow$ Hypergeometric
+  \item \textbf{Stop when you reach $r$ successes?} $\Rightarrow$ Negative Binomial
+  \item \textbf{Stop when you reach 1 success?} $\Rightarrow$ Geometric
+\end{itemize}
+\end{frame}
+
+% ------------------------------
+\subsection{Geometric}
+
+\begin{frame}{Geometric Distribution}
+Sequence of independent Bernoulli trials with success probability $p$.
+
+Let $X=$ trial on which we get the \textbf{first} success.
+\[
+X \sim \mathrm{Geom}(p).
+\]
+\pause
+\[
+P(X=x)=p(1-p)^{x-1},\quad x=1,2,\dots
+\]
+\pause
+\[
+E(X)=\frac{1}{p},\qquad 
+\mathrm{Var}(X)=\frac{1-p}{p^2}.
+\]
+\end{frame}
+
+% ------------------------------
+\subsection{From Geometric to Negative Binomial}
+
+\begin{frame}{From Geometric to Negative Binomial}
+Geometric = waiting time for \textbf{1} success.
+
+Negative Binomial = waiting time for \textbf{$r$ successes}.
+
+\pause
+
+Let
+\[
+X_1, X_2, \dots, X_r \sim \mathrm{Geom}(p)
+\]
+be independent waiting times between successive successes.
+
+\pause
+
+Then the total trial number of the $r$-th success is
+
+\[
+X = X_1 + X_2 + \cdots + X_r.
+\]
+
+\pause
+
+\[
+\boxed{\text{Negative Binomial = sum of } r \text{ Geometric variables}}
+\]
+\end{frame}
+
+% ------------------------------
+\subsection{Negative Binomial}
+
+\begin{frame}{Negative Binomial Distribution}
+Let $X=$ trial on which we get the $r$-th success.
+
+\[
+X \sim \mathrm{NB}(r,p).
+\]
+
+\pause
+
+\[
+P(X=x)=\binom{x-1}{r-1}p^{r}(1-p)^{x-r},
+\quad x=r,r+1,\dots
+\]
+
+\pause
+
+\[
+E(X)=\frac{r}{p},\qquad 
+\mathrm{Var}(X)=\frac{r(1-p)}{p^2}.
+\]
+\end{frame}
+
+% ------------------------------
+\subsection{Analogy: Bernoulli vs Binomial}
+
+\begin{frame}{Analogy: Bernoulli vs Binomial}
+\textbf{Fixed number of trials $n$:}
+\begin{itemize}
+  \item Bernoulli = outcome of \textbf{one} trial
+  \item Binomial = total successes in \textbf{$n$ trials}
+\end{itemize}
+
+\pause
+\textbf{Waiting for successes:}
+\begin{itemize}
+  \item Geometric = waiting time for \textbf{1} success
+  \item Negative Binomial = waiting time for \textbf{$r$ successes}
+\end{itemize}
+
+\pause
+\[
+\text{Binomial = sum of Bernoulli}
+\]
+\[
+\text{Negative Binomial = sum of Geometric}
+\]
+\end{frame}
+
+\subsection{Hypergeometric}
+
+\begin{frame}{Hypergeometric}
+Population size $N$, with $M$ successes and $N-M$ failures.
+
+Randomly select $n$ objects \textbf{without replacement}.
+Let $X=$ number of successes selected.
+\[
+X \sim \mathrm{HG}(n,N,M).
+\]
+\pause
+\[
+P(X=x)=\frac{\binom{M}{x}\binom{N-M}{n-x}}{\binom{N}{n}}.
+\]
+\pause
+Range:
+\[
+\max\{0,\ n-(N-M)\}\le x \le \min\{n,\ M\}.
+\]
+\end{frame}
+
+\begin{frame}{Hypergeometric: Mean and Variance}
+\[
+E(X)=n\frac{M}{N}.
+\]
+\[
+\mathrm{Var}(X)=n\frac{M}{N}\left(1-\frac{M}{N}\right)\frac{N-n}{N-1}.
+\]
+\pause
+\begin{itemize}
+  \item Note: if $N$ is large and $n$ is small, then HG can be approximated by Binomial with $p=M/N$.
+\end{itemize}
+\end{frame}
+
+% ==============================
+\section{Practice (Identification + Range)}
+% ==============================
+
+\subsection{Practice 1: Negative Binomial}
+
+\begin{frame}{Practice 1 (NB): Identify + Range}
+A player makes independent shots. Each shot is a hit with probability $p=0.4$.
+
+Let $X=$ shot number when the player gets the \textbf{3rd} hit.
+\begin{itemize}
+  \item Identify the distribution of $X$
+  \item What is the range of $X$?
+\end{itemize}
+\pause
+\textbf{Answer:}
+\[
+X\sim \mathrm{NB}(r=3,p=0.4),\quad x=3,4,5,\dots
+\]
+\end{frame}
+
+\subsection{Practice 2: Geometric}
+
+\begin{frame}{Practice 2 (Geom): Simple PMF}
+Each attempt succeeds with probability $p=0.25$. Attempts are independent.
+
+Let $X=$ attempt number of the \textbf{first} success.
+\[
+X\sim \mathrm{Geom}(0.25).
+\]
+\pause
+Compute $P(X=1)$ and $P(X=2)$.
+\pause
+\[
+P(X=1)=0.25,\qquad P(X=2)=0.25(0.75).
+\]
+\end{frame}
+
+\subsection{Practice 3: Hypergeometric (Expectation)}
+
+\begin{frame}{Practice 3 (HG): Expectation + Range}
+A class has $20$ students, including $5$ statistics majors.
+
+Select $4$ students \textbf{without replacement}.
+
+Let $X=$ number of statistics majors selected.
+
+\begin{itemize}
+  \item Identify the distribution of $X$
+  \item Find the possible values of $X$
+  \item Compute $E(X)$
+\end{itemize}
+
+\pause
+
+\textbf{Answer:}
+
+\[
+X\sim \mathrm{HG}(n=4, N=20, M=5).
+\]
+
+Range:
+\[
+0 \le x \le \min\{4,5\}=4.
+\]
+
+\[
+E(X)=4\cdot\frac{5}{20}=1.
+\]
+\end{frame}
+
+% ==============================
+\section{Homework Note}
+% ==============================
+
+\subsection{HW 4(d)}
+
+\begin{frame}{HW 4(d): Full Setup}
+
+Given:
+\begin{itemize}
+  \item Each throw hits bullseye with probability $p=0.3$
+  \item Tyler throws until he gets $2$ bullseyes
+  \item Let $X=$ number of throws needed
+\end{itemize}
+
+\pause
+
+Part (d):
+
+\begin{itemize}
+  \item Suppose he is stopped after $6$ throws (even if he has fewer than 2 bullseyes)
+  \item Let $Y=\min(X,6)$
+  \item Compare $E(Y)$ with $4$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{HW 4(d): Strategy}
+
+Recall:
+\[
+X \sim \mathrm{NB}(2,0.3)
+\]
+
+He is stopped after $6$ throws.
+
+\[
+Y=\min(X,6).
+\]
+
+\pause
+
+Compute expectation directly:
+
+\[
+E(Y)
+=
+\sum_{x=2}^{5} x P(X=x)
++
+6 P(X\ge 6).
+\]
+
+\pause
+
+Idea:
+\begin{itemize}
+  \item For $X=2,3,4,5$, $Y=X$
+  \item For $X\ge6$, $Y=6$
+\end{itemize}
+
+\end{frame}
+
+% ==============================
+\section{Wrap-Up}
+% ==============================
+
+\subsection{Summary}
+
+\begin{frame}{Wrap-Up: Key Takeaways}
+\begin{itemize}
+  \item \textbf{NB / Geom}: independent trials, count \textbf{trial number} when success count reaches $r$
+  \begin{itemize}
+    \item Geom = NB with $r=1$
+    \item Range: Geom starts at $1$; NB starts at $r$
+  \end{itemize}
+  \item \textbf{HG}: sample \textbf{without replacement}
+  \begin{itemize}
+    \item PMF uses combinations
+    \item Range: $\max\{0,n-(N-M)\}\le x \le \min\{n,M\}$
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+% ==============================
+\section{Attendance Check}
+% ==============================
+
+\begin{frame}{In-Class Attendance Check (Quick)}
+Suppose $X\sim \mathrm{Geom}(p)$ using the definition:
+\[
+P(X=x)=p(1-p)^{x-1},\quad x=1,2,\dots
+\]
+If $p=0.30$, compute $P(X=1)$.
+
+\vspace{3mm}
+\textit{Please submit: Full Name; Section Number; Your Answer}
+
+\pause
+\vspace{2mm}
+\textbf{Answer:}
+\[
+P(X=1)=0.30.
+\]
+\end{frame}
+
+\end{document}
