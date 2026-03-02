@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.27)  2 MAR 2026 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.27)  2 MAR 2026 11:55
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex
-(d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex
+**week7-discussion.tex
+(./week7-discussion.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamer.cls
@@ -523,35 +522,125 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen300
 \beamer@dimb=\dimen301
-) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)) (./beamercolorthemeuiowa.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty) (./custom.tex
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)) (./beamercolorthemeuiowa.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemesmoothbars.sty) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box78
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen302
+\pgf@nodesepend=\dimen303
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen304
+\pgffor@skip=\dimen305
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
+)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count358
+\pgfplotmarksize=\dimen306
+)
+\tikz@lastx=\dimen307
+\tikz@lasty=\dimen308
+\tikz@lastxsaved=\dimen309
+\tikz@lastysaved=\dimen310
+\tikz@lastmovetox=\dimen311
+\tikz@lastmovetoy=\dimen312
+\tikzleveldistance=\dimen313
+\tikzsiblingdistance=\dimen314
+\tikz@figbox=\box79
+\tikz@figbox@bg=\box80
+\tikz@tempbox=\box81
+\tikz@tempbox@bg=\box82
+\tikztreelevel=\count359
+\tikznumberofchildren=\count360
+\tikznumberofcurrentchild=\count361
+\tikz@fig@count=\count362
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count363
+\pgfmatrixcurrentcolumn=\count364
+\pgf@matrix@numberofcolumns=\count365
+)
+\tikz@expandcount=\count366
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks48
+\t@pgfplots@tokb=\toks49
+\t@pgfplots@tokc=\toks50
+\pgfplots@tmpa=\dimen315
+\c@pgfplots@coordindex=\count367
+\c@pgfplots@scanlineindex=\count368
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count369
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count370
+\t@pgfplotstable@a=\toks51
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count371
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen316
+\pgfdecoratedremainingdistance=\dimen317
+\pgfdecoratedinputsegmentcompleteddistance=\dimen318
+\pgfdecoratedinputsegmentremainingdistance=\dimen319
+\pgf@decorate@distancetomove=\dimen320
+\pgf@decorate@repeatstate=\count372
+\pgfdecorationsegmentamplitude=\dimen321
+\pgfdecorationsegmentlength=\dimen322
+)
+\tikz@lib@dec@box=\box83
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count373
+\pgfplots@xmin@reg=\dimen323
+\pgfplots@xmax@reg=\dimen324
+\pgfplots@ymin@reg=\dimen325
+\pgfplots@ymax@reg=\dimen326
+\pgfplots@zmin@reg=\dimen327
+\pgfplots@zmax@reg=\dimen328
+) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (./custom.tex
 LaTeX Info: Redefining \c on input line 60.
 LaTeX Info: Redefining \d on input line 62.
 LaTeX Info: Redefining \u on input line 64.
 LaTeX Info: Redefining \v on input line 66.
 ) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count358
+\l__color_backend_stack_int=\count374
 ) (./week7-discussion.aux)
 \openout1 = `week7-discussion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -589,24 +678,24 @@ LaTeX Font Info:    ... okay on input line 15.
 
 (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count359
-\scratchdimen=\dimen302
-\scratchbox=\box78
-\nofMPsegments=\count360
-\nofMParguments=\count361
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count362
-\MPscratchDim=\dimen303
-\MPnumerator=\count363
-\makeMPintoPDFobject=\count364
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count375
+\scratchdimen=\dimen329
+\scratchbox=\box84
+\nofMPsegments=\count376
+\nofMParguments=\count377
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count378
+\MPscratchDim=\dimen330
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
+\everyMPtoPDFconversion=\toks53
 ) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 17.
  (./week7-discussion.out) (./week7-discussion.out)
 \@outlinefile=\write5
 \openout5 = `week7-discussion.out'.
@@ -623,91 +712,94 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./week7-discussion.nav)
-Overfull \hbox (68.74364pt too wide) detected at line 15
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+)
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(./week7-discussion.nav)
+Overfull \hbox (68.74364pt too wide) detected at line 17
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 
-Overfull \hbox (68.74364pt too wide) detected at line 19
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 21
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
-<iowa-logo.png, id=180, 150.5625pt x 72.27pt>
+<iowa-logo.png, id=206, 150.5625pt x 72.27pt>
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 19.
+Package pdftex.def Info: iowa-logo.png  used on input line 21.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [1{c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./iowa-logo.png>]
-Overfull \hbox (68.74364pt too wide) detected at line 23
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 25
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 (./week7-discussion.toc)
-Overfull \vbox (43.10782pt too high) detected at line 23
+Overfull \vbox (43.10782pt too high) detected at line 25
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 23.
+Package pdftex.def Info: iowa-logo.png  used on input line 25.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [2
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 44
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 46
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
  (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 44.
+Package pdftex.def Info: iowa-logo.png  used on input line 46.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [3
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 61
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 63
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 61.
+Package pdftex.def Info: iowa-logo.png  used on input line 63.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [4
 
 ]
 Overfull \hbox (68.74364pt too wide) detected at line 76
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
@@ -716,46 +808,46 @@ Package pdftex.def Info: iowa-logo.png  used on input line 76.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [5
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 97
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 92
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 97.
+Package pdftex.def Info: iowa-logo.png  used on input line 92.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [6
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 115
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 107
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 115.
+Package pdftex.def Info: iowa-logo.png  used on input line 107.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [7
 
 ]
 Overfull \hbox (68.74364pt too wide) detected at line 128
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
@@ -764,242 +856,322 @@ Package pdftex.def Info: iowa-logo.png  used on input line 128.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [8
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 142
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 147
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 142.
+Package pdftex.def Info: iowa-logo.png  used on input line 147.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [9
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 155
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 162
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 155.
+Package pdftex.def Info: iowa-logo.png  used on input line 162.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [10
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 174
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 193
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 174.
+Package pdftex.def Info: iowa-logo.png  used on input line 193.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [11
 
 ]
+Overfull \hbox (68.74364pt too wide) detected at line 211
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 174.
+Package pdftex.def Info: iowa-logo.png  used on input line 211.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [12
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 188
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 224
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 188.
+Package pdftex.def Info: iowa-logo.png  used on input line 224.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [13
 
 ]
+Overfull \hbox (68.74364pt too wide) detected at line 238
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 188.
+Package pdftex.def Info: iowa-logo.png  used on input line 238.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [14
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 205
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 251
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 205.
+Package pdftex.def Info: iowa-logo.png  used on input line 251.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [15
 
 ]
+Overfull \hbox (68.74364pt too wide) detected at line 270
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 205.
+Package pdftex.def Info: iowa-logo.png  used on input line 270.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [16
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 224
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
- []
-
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 224.
+Package pdftex.def Info: iowa-logo.png  used on input line 270.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [17
 
 ]
+Overfull \hbox (68.74364pt too wide) detected at line 284
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 224.
+Package pdftex.def Info: iowa-logo.png  used on input line 284.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [18
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 234
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
- []
-
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 234.
+Package pdftex.def Info: iowa-logo.png  used on input line 284.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [19
 
 ]
+Overfull \hbox (68.74364pt too wide) detected at line 301
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 234.
+Package pdftex.def Info: iowa-logo.png  used on input line 301.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [20
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 248
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
- []
-
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 248.
+Package pdftex.def Info: iowa-logo.png  used on input line 301.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [21
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 261
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+Overfull \hbox (68.74364pt too wide) detected at line 320
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 261.
+Package pdftex.def Info: iowa-logo.png  used on input line 320.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [22
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 283
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
- []
-
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 283.
+Package pdftex.def Info: iowa-logo.png  used on input line 320.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [23
 
 ]
+Overfull \hbox (68.74364pt too wide) detected at line 330
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 283.
+Package pdftex.def Info: iowa-logo.png  used on input line 330.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
-  [] [][] [][][] [][] [][][][][] [][][][][][] [][] [][] [][]  
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 [24
+
+]
+File: iowa-logo.png Graphic file (type png)
+<use iowa-logo.png>
+Package pdftex.def Info: iowa-logo.png  used on input line 330.
+(pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
+
+Overfull \hbox (68.74364pt too wide) has occurred while \output is active
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+[25
+
+]
+Overfull \hbox (68.74364pt too wide) detected at line 342
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+File: iowa-logo.png Graphic file (type png)
+<use iowa-logo.png>
+Package pdftex.def Info: iowa-logo.png  used on input line 342.
+(pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
+
+Overfull \hbox (68.74364pt too wide) has occurred while \output is active
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+[26
+
+]
+Overfull \hbox (68.74364pt too wide) detected at line 355
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+File: iowa-logo.png Graphic file (type png)
+<use iowa-logo.png>
+Package pdftex.def Info: iowa-logo.png  used on input line 355.
+(pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
+
+Overfull \hbox (68.74364pt too wide) has occurred while \output is active
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+[27
+
+]
+Overfull \hbox (68.74364pt too wide) detected at line 377
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+File: iowa-logo.png Graphic file (type png)
+<use iowa-logo.png>
+Package pdftex.def Info: iowa-logo.png  used on input line 377.
+(pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
+
+Overfull \hbox (68.74364pt too wide) has occurred while \output is active
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+[28
+
+]
+File: iowa-logo.png Graphic file (type png)
+<use iowa-logo.png>
+Package pdftex.def Info: iowa-logo.png  used on input line 377.
+(pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
+
+Overfull \hbox (68.74364pt too wide) has occurred while \output is active
+  [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
+ []
+
+[29
 
 ]
 \tf@nav=\write6
@@ -1017,21 +1189,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `week7-discussion.out' has not changed.
-(rerunfilecheck)             Checksum: 6AF8C432AE2CE50D2171A259D23A7D43;3922.
+(rerunfilecheck)             Checksum: 324E240BE77EE3C33BD06D9E9A03CE5D;4701.
  ) 
 Here is how much of TeX's memory you used:
- 22158 strings out of 469514
- 433363 string characters out of 5468015
- 815222 words of memory out of 5000000
- 50289 multiletter control sequences out of 15000+600000
+ 35609 strings out of 469514
+ 858517 string characters out of 5468015
+ 1381632 words of memory out of 5000000
+ 63550 multiletter control sequences out of 15000+600000
  638080 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,20n,107p,445b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,20n,107p,737b,2282s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on week7-discussion.pdf (24 pages, 214951 bytes).
+Output written on week7-discussion.pdf (29 pages, 239541 bytes).
 PDF statistics:
- 1481 PDF objects out of 1728 (max. 8388607)
- 903 compressed objects within 10 object streams
- 72 named destinations out of 1000 (max. 500000)
- 316 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2055 PDF objects out of 2073 (max. 8388607)
+ 1219 compressed objects within 13 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 348 words of extra memory for PDF output out of 10000 (max. 10000000)
 

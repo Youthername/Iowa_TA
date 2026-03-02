@@ -3,6 +3,8 @@
 \usecolortheme{uiowa}
 \useoutertheme[subsection=true]{smoothbars}
 \usepackage{amsmath,amssymb}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 \input{custom.tex}
 
 \title[STAT 2020 Week 7 \hfill \insertframenumber/\inserttotalframenumber]{STAT 2020 Discussion Slides}
@@ -47,6 +49,19 @@
 \section{Poisson Rate and Window Size}
 % ==============================
 
+\subsection{Poisson Distribution Formula}
+\begin{frame}{Poisson Distribution Formula}
+  If \(X\sim\Pois(\mu)\), then
+  \[
+    P(X=k)=\frac{e^{-\mu}\mu^k}{k!},\qquad k=0,1,2,\dots
+  \]
+  In rate form:
+  \[
+    X=N_t\sim\Pois(\lambda t)\quad\Longrightarrow\quad
+    P(N_t=k)=\frac{e^{-\lambda t}(\lambda t)^k}{k!}.
+  \]
+\end{frame}
+
 \subsection{Time-Interval Example}
 \begin{frame}{Poisson: Time-Interval Example}
   Assume arrivals follow \(N_t \sim \Pois(\lambda t)\).\\[4pt]
@@ -57,6 +72,22 @@
   Expected counts scale linearly:
   \[
     \Ex(N_5)=1.5,\quad \Ex(N_{20})=6,\quad \Ex(N_{60})=18.
+  \]
+\end{frame}
+
+\subsection{How Interval Changes the Mean}
+\begin{frame}{How Interval Length Changes the Mean}
+  If rate is \(\lambda\) per minute, then for any interval length \(t\):
+  \[
+    N_t\sim\Pois(\lambda t),\qquad \mu_t=\Ex(N_t)=\lambda t.
+  \]
+  So when the interval is multiplied by \(c\), the mean is also multiplied by \(c\).
+  \[
+    t \to ct \quad\Longrightarrow\quad \mu_t \to c\mu_t.
+  \]
+  Example with \(\lambda=0.3\):
+  \[
+    \Ex(N_{10})=3,\ \Ex(N_{20})=6,\ \Ex(N_{30})=9.
   \]
 \end{frame}
 
@@ -87,13 +118,78 @@
     \item Partial fractions
     \item Symmetry tricks
     \item Piecewise integration
-    \item Optional advanced method (skip if time is tight)
+    \item Optional advanced method
   \end{itemize}
   \vspace{4pt}
   \[
     \int f(g(x))g'(x)\,dx=\int f(u)\,du,\qquad
     \int u\,dv=uv-\int v\,du.
   \]
+\end{frame}
+
+\subsection{Common Integral Forms}
+\begin{frame}{Common Integral Forms to Recognize}
+  \[
+  \text{(1) }\int 1\,dx = x + c
+  \]
+  \[
+  \text{(2) }\int m\,dx = mx + c
+  \]
+  \[
+  \text{(3) }\int x^n\,dx = \frac{x^{n+1}}{n+1} + c
+  \]
+  \[
+  \text{(4) }\int \sin x\,dx = -\cos x + c
+  \]
+  \[
+  \text{(5) }\int \cos x\,dx = \sin x + c
+  \]
+\end{frame}
+
+\begin{frame}{Common Integral Forms to Recognize (Cont.)}
+  \[
+  \text{(6) }\int \sec^2 x\,dx = \tan x + c
+  \]
+  \[
+  \text{(7) }\int \frac{1}{x}\,dx = \ln x + c
+  \]
+  \[
+  \text{(8) }\int e^x\,dx = e^x + c
+  \]
+  \[
+  \text{(9) }\int a^x\,dx = \frac{a^x}{\ln a} + c
+  \]
+\end{frame}
+
+\subsection{Visual: Integral as Area}
+\begin{frame}{What Integration Means (Area View)}
+  \[
+    \int_a^b f(x)\,dx
+    \quad\text{is the signed area between }y=f(x)\text{ and the }x\text{-axis.}
+  \]
+  \vspace{2mm}
+  \begin{center}
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.82\textwidth,
+      height=0.45\textheight,
+      xmin=0, xmax=2.2,
+      ymin=0, ymax=4.5,
+      axis lines=left,
+      xlabel={$x$},
+      ylabel={$y$},
+      xtick={0,1,2},
+      ytick={0,1,2,3,4},
+      domain=0:2,
+      samples=120
+    ]
+      \addplot[draw=none, fill=blue!25, domain=0:1.5] {x^2} \closedcycle;
+      \addplot[thick, blue!70!black] {x^2};
+      \addplot[dashed] coordinates {(1.5,0) (1.5,2.25)};
+      \node at (axis cs:1.0,1.2) {$\int_0^{1.5} x^2\,dx$};
+    \end{axis}
+  \end{tikzpicture}
+  \end{center}
 \end{frame}
 
 % ==============================
@@ -240,10 +336,8 @@
 \subsection{Exam Questions Policy}
 \begin{frame}{Class Reminder: Exam Questions}
   \begin{itemize}
-    \item Do not discuss specific exam questions in class.
-    \item If students ask, invite them to office hours.
-    \item Suggested response: \\
-    ``I cannot discuss exam details in class, but I can help during office hours.''
+    \item Specific exam questions are not discussed during class sessions.
+    \item Exam-related questions can be addressed in office hours.
   \end{itemize}
 \end{frame}
 

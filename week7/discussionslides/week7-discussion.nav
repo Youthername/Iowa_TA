@@ -13,83 +13,101 @@
 \headcommand {\beamer@subsectionpages {3}{3}}
 \headcommand {\sectionentry {2}{Poisson Rate and Window Size}{4}{Poisson Rate and Window Size}{0}}
 \headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Time-Interval Example}}
-\headcommand {\slideentry {2}{1}{1}{4/4}{Time-Interval Example}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Poisson Distribution Formula}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{Poisson Distribution Formula}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Region-Size Example}}
-\headcommand {\slideentry {2}{2}{1}{5/5}{Region-Size Example}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Time-Interval Example}}
+\headcommand {\slideentry {2}{2}{1}{5/5}{Time-Interval Example}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@sectionpages {4}{5}}
 \headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\sectionentry {3}{Integration Methods (Quick Review)}{6}{Integration Methods (Quick Review)}{0}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Core Techniques}}
-\headcommand {\slideentry {3}{1}{1}{6/6}{Core Techniques}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{6}{How Interval Changes the Mean}}
+\headcommand {\slideentry {2}{3}{1}{6/6}{How Interval Changes the Mean}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {6}{6}}
 \headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\sectionentry {4}{Continuous Piecewise Example}{7}{Continuous Piecewise Example}{0}}
-\headcommand {\beamer@subsectionpages {7}{6}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{7}{Define a PDF}}
-\headcommand {\slideentry {4}{1}{1}{7/7}{Define a PDF}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{7}{Region-Size Example}}
+\headcommand {\slideentry {2}{4}{1}{7/7}{Region-Size Example}{0}}
 \headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@sectionpages {4}{7}}
 \headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{8}{Derive CDF from PDF}}
-\headcommand {\slideentry {4}{2}{1}{8/8}{Derive CDF from PDF}{0}}
+\headcommand {\sectionentry {3}{Integration Methods (Quick Review)}{8}{Integration Methods (Quick Review)}{0}}
+\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{8}{Core Techniques}}
+\headcommand {\slideentry {3}{1}{1}{8/8}{Core Techniques}{0}}
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{9}{Recover PDF from CDF}}
-\headcommand {\slideentry {4}{3}{1}{9/9}{Recover PDF from CDF}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{9}{Common Integral Forms}}
+\headcommand {\slideentry {3}{2}{1}{9/9}{Common Integral Forms}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{10}{Compute Mean and Variance}}
-\headcommand {\slideentry {4}{4}{1}{10/10}{Compute Mean and Variance}{0}}
+\headcommand {\slideentry {3}{2}{2}{10/10}{Common Integral Forms}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {7}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\sectionentry {5}{Practice (Quick Drills)}{11}{Practice (Quick Drills)}{0}}
-\headcommand {\beamer@subsectionpages {11}{10}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{11}{Practice 1: Poisson Time Scaling}}
-\headcommand {\slideentry {5}{1}{1}{11/12}{Practice 1: Poisson Time Scaling}{0}}
-\headcommand {\beamer@framepages {11}{12}}
-\headcommand {\beamer@subsectionpages {11}{12}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{13}{Practice 2: Poisson Region Scaling}}
-\headcommand {\slideentry {5}{2}{1}{13/14}{Practice 2: Poisson Region Scaling}{0}}
-\headcommand {\beamer@framepages {13}{14}}
-\headcommand {\beamer@subsectionpages {13}{14}}
-\headcommand {\beamer@subsectionentry {0}{5}{3}{15}{Practice 3: Integration Method Choice}}
-\headcommand {\slideentry {5}{3}{1}{15/16}{Practice 3: Integration Method Choice}{0}}
-\headcommand {\beamer@framepages {15}{16}}
-\headcommand {\beamer@subsectionpages {15}{16}}
-\headcommand {\beamer@subsectionentry {0}{5}{4}{17}{Practice 4: CDF from Piecewise PDF}}
-\headcommand {\slideentry {5}{4}{1}{17/18}{Practice 4: CDF from Piecewise PDF}{0}}
-\headcommand {\beamer@framepages {17}{18}}
-\headcommand {\beamer@subsectionpages {17}{18}}
-\headcommand {\beamer@subsectionentry {0}{5}{5}{19}{Practice 5: Probability by Area}}
-\headcommand {\slideentry {5}{5}{1}{19/20}{Practice 5: Probability by Area}{0}}
-\headcommand {\beamer@framepages {19}{20}}
-\headcommand {\beamer@sectionpages {11}{20}}
-\headcommand {\beamer@subsectionpages {19}{20}}
-\headcommand {\sectionentry {6}{Class Reminder}{21}{Class Reminder}{0}}
-\headcommand {\beamer@subsectionpages {21}{20}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{21}{Exam Questions Policy}}
-\headcommand {\slideentry {6}{1}{1}{21/21}{Exam Questions Policy}{0}}
-\headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@sectionpages {21}{21}}
-\headcommand {\beamer@subsectionpages {21}{21}}
-\headcommand {\sectionentry {7}{Wrap-Up}{22}{Wrap-Up}{0}}
-\headcommand {\beamer@subsectionpages {22}{21}}
-\headcommand {\beamer@subsectionentry {0}{7}{1}{22}{Take-Home Messages}}
-\headcommand {\slideentry {7}{1}{1}{22/22}{Take-Home Messages}{0}}
-\headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@sectionpages {22}{22}}
-\headcommand {\beamer@subsectionpages {22}{22}}
-\headcommand {\sectionentry {8}{Attendance Check}{23}{Attendance Check}{0}}
-\headcommand {\slideentry {8}{0}{1}{23/24}{}{0}}
-\headcommand {\beamer@framepages {23}{24}}
-\headcommand {\beamer@partpages {1}{24}}
-\headcommand {\beamer@subsectionpages {23}{24}}
-\headcommand {\beamer@sectionpages {23}{24}}
-\headcommand {\beamer@documentpages {24}}
-\headcommand {\gdef \inserttotalframenumber {18}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{11}{Visual: Integral as Area}}
+\headcommand {\slideentry {3}{3}{1}{11/11}{Visual: Integral as Area}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@sectionpages {8}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\sectionentry {4}{Continuous Piecewise Example}{12}{Continuous Piecewise Example}{0}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{12}{Define a PDF}}
+\headcommand {\slideentry {4}{1}{1}{12/12}{Define a PDF}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{13}{Derive CDF from PDF}}
+\headcommand {\slideentry {4}{2}{1}{13/13}{Derive CDF from PDF}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{14}{Recover PDF from CDF}}
+\headcommand {\slideentry {4}{3}{1}{14/14}{Recover PDF from CDF}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{15}{Compute Mean and Variance}}
+\headcommand {\slideentry {4}{4}{1}{15/15}{Compute Mean and Variance}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@sectionpages {12}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\sectionentry {5}{Practice (Quick Drills)}{16}{Practice (Quick Drills)}{0}}
+\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{16}{Practice 1: Poisson Time Scaling}}
+\headcommand {\slideentry {5}{1}{1}{16/17}{Practice 1: Poisson Time Scaling}{0}}
+\headcommand {\beamer@framepages {16}{17}}
+\headcommand {\beamer@subsectionpages {16}{17}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{18}{Practice 2: Poisson Region Scaling}}
+\headcommand {\slideentry {5}{2}{1}{18/19}{Practice 2: Poisson Region Scaling}{0}}
+\headcommand {\beamer@framepages {18}{19}}
+\headcommand {\beamer@subsectionpages {18}{19}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{20}{Practice 3: Integration Method Choice}}
+\headcommand {\slideentry {5}{3}{1}{20/21}{Practice 3: Integration Method Choice}{0}}
+\headcommand {\beamer@framepages {20}{21}}
+\headcommand {\beamer@subsectionpages {20}{21}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{22}{Practice 4: CDF from Piecewise PDF}}
+\headcommand {\slideentry {5}{4}{1}{22/23}{Practice 4: CDF from Piecewise PDF}{0}}
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\beamer@subsectionentry {0}{5}{5}{24}{Practice 5: Probability by Area}}
+\headcommand {\slideentry {5}{5}{1}{24/25}{Practice 5: Probability by Area}{0}}
+\headcommand {\beamer@framepages {24}{25}}
+\headcommand {\beamer@sectionpages {16}{25}}
+\headcommand {\beamer@subsectionpages {24}{25}}
+\headcommand {\sectionentry {6}{Class Reminder}{26}{Class Reminder}{0}}
+\headcommand {\beamer@subsectionpages {26}{25}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{26}{Exam Questions Policy}}
+\headcommand {\slideentry {6}{1}{1}{26/26}{Exam Questions Policy}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@sectionpages {26}{26}}
+\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\sectionentry {7}{Wrap-Up}{27}{Wrap-Up}{0}}
+\headcommand {\beamer@subsectionpages {27}{26}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{27}{Take-Home Messages}}
+\headcommand {\slideentry {7}{1}{1}{27/27}{Take-Home Messages}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@sectionpages {27}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\sectionentry {8}{Attendance Check}{28}{Attendance Check}{0}}
+\headcommand {\slideentry {8}{0}{1}{28/29}{}{0}}
+\headcommand {\beamer@framepages {28}{29}}
+\headcommand {\beamer@partpages {1}{29}}
+\headcommand {\beamer@subsectionpages {28}{29}}
+\headcommand {\beamer@sectionpages {28}{29}}
+\headcommand {\beamer@documentpages {29}}
+\headcommand {\gdef \inserttotalframenumber {23}}
