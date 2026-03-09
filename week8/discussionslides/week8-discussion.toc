@@ -1,0 +1,28 @@
+\beamer@sectionintoc {1}{Week 8 Goals}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Agenda}{3}{0}{1}
+\beamer@sectionintoc {2}{Exponential vs Poisson}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Core Formulas}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{What Is Being Modeled?}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Identify \(\lambda \)}{6}{0}{2}
+\beamer@sectionintoc {3}{Memoryless Property}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Main Identity}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Worked Example}{8}{0}{3}
+\beamer@sectionintoc {4}{Continuous RV Review}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Formula Review}{9}{0}{4}
+\beamer@subsectionintoc {4}{2}{Practice CDF}{10}{0}{4}
+\beamer@subsectionintoc {4}{3}{Moments}{11}{0}{4}
+\beamer@sectionintoc {5}{Using the Z-table}{12}{0}{5}
+\beamer@subsectionintoc {5}{1}{Standardization}{12}{0}{5}
+\beamer@subsectionintoc {5}{2}{Example 1}{13}{0}{5}
+\beamer@subsectionintoc {5}{3}{Example 2}{14}{0}{5}
+\beamer@sectionintoc {6}{Practice (Quick Drills)}{15}{0}{6}
+\beamer@subsectionintoc {6}{1}{Practice 1}{15}{0}{6}
+\beamer@subsectionintoc {6}{2}{Practice 2}{17}{0}{6}
+\beamer@subsectionintoc {6}{3}{Practice 3}{19}{0}{6}
+\beamer@subsectionintoc {6}{4}{Practice 4}{21}{0}{6}
+\beamer@subsectionintoc {6}{5}{Practice 5}{23}{0}{6}
+\beamer@sectionintoc {7}{Class Reminder}{25}{0}{7}
+\beamer@subsectionintoc {7}{1}{Exam 1 Review}{25}{0}{7}
+\beamer@sectionintoc {8}{Wrap-Up}{26}{0}{8}
+\beamer@subsectionintoc {8}{1}{Take-Home Messages}{26}{0}{8}
+\beamer@sectionintoc {9}{Attendance Check}{27}{0}{9}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1772474088.80058 "d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex" "week7-discussion.pdf" "week7-discussion" 1772474101.49508 0
+["pdflatex"] 1772475701.84778 "d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex" "week7-discussion.pdf" "week7-discussion" 1772475718.40778 0
   "beamercolorthemeuiowa.sty" 1772471194 2552 3fa5e40579de51e194302b39c413a8d4 ""
   "c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1772231865 1004 54797486969f23fa377b128694d548df ""
   "c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1772231865 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -259,13 +259,13 @@
   "c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1772231970 2236227 a33bdf6718114178fbef73046d98ec80 ""
   "c:/Users/leisure/AppData/Roaming/TinyTeX/texmf.cnf" 1756710709 944 81952a077c399899ccd1fa4ccdda06f4 ""
   "custom.tex" 1772471194 10483 0cd060cb94595706864ef82450fcd6ba ""
-  "d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex" 1772474087 9304 acae729ad8ef77dea7c050f52b6ff8ae ""
+  "d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex" 1772475678 9306 03e957aea456569d4ac533aadc666125 ""
   "iowa-logo.png" 1772471194 1331 5454f84938b1e893e052c63bb0bb7cb8 ""
-  "week7-discussion.aux" 1772474100 10952 427869ff1ef2585ac46997842628b15c "pdflatex"
-  "week7-discussion.nav" 1772474100 6558 8ded0805fee13c0c3e8f813bcc7eccbe "pdflatex"
-  "week7-discussion.out" 1772474100 4701 324e240be77ee3c33bd06d9e9a03ce5d "pdflatex"
-  "week7-discussion.tex" 1772474087 9304 acae729ad8ef77dea7c050f52b6ff8ae ""
-  "week7-discussion.toc" 1772474100 1711 e799f39f7b9b1a968988882cd7a9de9e "pdflatex"
+  "week7-discussion.aux" 1772475717 10951 a70abcf014cf3704068e9d62e7796d2a "pdflatex"
+  "week7-discussion.nav" 1772475717 6557 be8e8860124c3b1920fc25e79ec2f3d7 "pdflatex"
+  "week7-discussion.out" 1772475717 4701 fd8e82b513d8a065badee49fc573ef58 "pdflatex"
+  "week7-discussion.tex" 1772475678 9306 03e957aea456569d4ac533aadc666125 ""
+  "week7-discussion.toc" 1772475717 1711 54e6834a3d116f9ab7c8ecfca04e7a4f "pdflatex"
   (generated)
   "week7-discussion.aux"
   "week7-discussion.log"

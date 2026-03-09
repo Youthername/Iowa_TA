@@ -110,6 +110,38 @@
 \section{Integration Methods (Quick Review)}
 % ==============================
 
+\subsection{Visual: Integral as Area}
+\begin{frame}{What Integration Means (Area View)}
+  \[
+    \int_a^b f(x)\,dx
+    \quad\text{is the signed area between }y=f(x)\text{ and the }x\text{-axis.}
+  \]
+  \vspace{2mm}
+  \begin{center}
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.82\textwidth,
+      height=0.45\textheight,
+      xmin=0, xmax=2.2,
+      ymin=0, ymax=4.5,
+      axis lines=left,
+      xlabel={$x$},
+      ylabel={$y$},
+      xtick={0,1,2},
+      ytick={0,1,2,3,4},
+      domain=0:2,
+      samples=120
+    ]
+      \addplot[draw=none, fill=blue!25, domain=0:1.5] {x^2} \closedcycle;
+      \addplot[thick, blue!70!black] {x^2};
+      \addplot[dashed] coordinates {(1.5,0) (1.5,2.25)};
+      \node at (axis cs:1.0,1.2) {$\int_0^{1.5} x^2\,dx$};
+    \end{axis}
+  \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+
 \subsection{Core Techniques}
 \begin{frame}{Integration Methods: Quick Review}
   \begin{itemize}
@@ -161,36 +193,6 @@
   \]
 \end{frame}
 
-\subsection{Visual: Integral as Area}
-\begin{frame}{What Integration Means (Area View)}
-  \[
-    \int_a^b f(x)\,dx
-    \quad\text{is the signed area between }y=f(x)\text{ and the }x\text{-axis.}
-  \]
-  \vspace{2mm}
-  \begin{center}
-  \begin{tikzpicture}
-    \begin{axis}[
-      width=0.82\textwidth,
-      height=0.45\textheight,
-      xmin=0, xmax=2.2,
-      ymin=0, ymax=4.5,
-      axis lines=left,
-      xlabel={$x$},
-      ylabel={$y$},
-      xtick={0,1,2},
-      ytick={0,1,2,3,4},
-      domain=0:2,
-      samples=120
-    ]
-      \addplot[draw=none, fill=blue!25, domain=0:1.5] {x^2} \closedcycle;
-      \addplot[thick, blue!70!black] {x^2};
-      \addplot[dashed] coordinates {(1.5,0) (1.5,2.25)};
-      \node at (axis cs:1.0,1.2) {$\int_0^{1.5} x^2\,dx$};
-    \end{axis}
-  \end{tikzpicture}
-  \end{center}
-\end{frame}
 
 % ==============================
 \section{Continuous Piecewise Example}

@@ -1,0 +1,355 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{uiowa}
+\useoutertheme[subsection=true]{smoothbars}
+\usepackage{amsmath,amssymb}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\input{custom.tex}
+
+\title[STAT 2020 Week 8 \hfill \insertframenumber/\inserttotalframenumber]{STAT 2020 Discussion Slides}
+\subtitle{Week 8: Exponential, Poisson, and Z-table}
+\author{Shuo Li}
+\institute{University of Iowa}
+\date{\today}
+\logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Index (Outline)}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ==============================
+\section{Week 8 Goals}
+% ==============================
+
+\subsection{Agenda}
+\begin{frame}{Agenda}
+  \begin{itemize}
+    \item Exponential vs. Poisson: what is modeled and key formulas
+    \item Identify \(\lambda\) correctly in exponential models
+    \item Memoryless property practice
+    \item Continuous random variable review: \(f\), \(F\), \(\Ex(X)\), \(\Var(X)\)
+    \item How to use the Z-table for normal probabilities
+    \item Attendance check
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Exponential vs Poisson}
+% ==============================
+
+\subsection{Core Formulas}
+\begin{frame}{Basic Formulas (Must Know)}
+  \textbf{Poisson (count in a window):}
+  \[
+    X\sim\Pois(\mu),\qquad P(X=k)=\frac{e^{-\mu}\mu^k}{k!},\quad k=0,1,2,\dots
+  \]
+  \[
+    \Ex(X)=\mu,\qquad \Var(X)=\mu.
+  \]
+  \vspace{2mm}
+  \textbf{Exponential (waiting time):}
+  \[
+    X\sim\Exp(\lambda),\qquad f(x)=\lambda e^{-\lambda x},\ x>0
+  \]
+  \[
+    F(x)=1-e^{-\lambda x},\quad x>0,\qquad
+    \Ex(X)=\frac{1}{\lambda},\quad \Var(X)=\frac{1}{\lambda^2}.
+  \]
+\end{frame}
+
+\subsection{What Is Being Modeled?}
+\begin{frame}{Exponential vs. Poisson: Quick Comparison}
+  \begin{center}
+  \begin{tabular}{l|l|l}
+    \textbf{Distribution} & \textbf{Random Variable} & \textbf{Typical Question} \\
+    \hline
+    Poisson & count & ``How many calls in 10 minutes?'' \\
+    Exponential & waiting time & ``How long until next call?'' \\
+  \end{tabular}
+  \end{center}
+  \vspace{2mm}
+  If arrivals follow a Poisson process with rate \(\lambda\):
+  \[
+    N_t\sim\Pois(\lambda t),\qquad T\sim\Exp(\lambda).
+  \]
+\end{frame}
+
+\subsection{Identify \(\lambda\)}
+\begin{frame}{How to Find \(\lambda\) in Exponential Questions}
+  If mean waiting time is \(m\), then
+  \[
+    \Ex(X)=\frac{1}{\lambda}=m
+    \quad\Longrightarrow\quad
+    \lambda=\frac{1}{m}.
+  \]
+  \vspace{2mm}
+  Example: mean wait \(=8\) minutes
+  \[
+    \lambda=\frac{1}{8}\ \text{per minute},
+    \qquad
+    f(x)=\frac{1}{8}e^{-x/8}.
+  \]
+\end{frame}
+
+% ==============================
+\section{Memoryless Property}
+% ==============================
+
+\subsection{Main Identity}
+\begin{frame}{Memoryless Property of Exponential}
+  For \(X\sim\Exp(\lambda)\), for any \(s,t>0\):
+  \[
+    P(X>s+t\mid X>s)=P(X>t).
+  \]
+  Equivalent survival form:
+  \[
+    P(X>u)=e^{-\lambda u},\quad u>0.
+  \]
+  So
+  \[
+    P(X>s+t\mid X>s)=\frac{e^{-\lambda(s+t)}}{e^{-\lambda s}}=e^{-\lambda t}.
+  \]
+\end{frame}
+
+\subsection{Worked Example}
+\begin{frame}{Memoryless Example}
+  Suppose \(X\sim\Exp(\lambda)\) with mean \(6\) minutes. Then \(\lambda=\frac16\).
+  \[
+    P(X>10\mid X>4)=P(X>6)=e^{-(1/6)\cdot 6}=e^{-1}\approx 0.3679.
+  \]
+  \textbf{Key point:} once the student has already waited 4 minutes, only the extra 6 minutes matters.
+\end{frame}
+
+% ==============================
+\section{Continuous RV Review}
+% ==============================
+
+\subsection{Formula Review}
+\begin{frame}{Continuous RV Basics}
+  \[
+    F_X(x)=P(X\le x)=\int_{-\infty}^{x} f_X(t)\,dt,\qquad
+    f_X(x)=F_X'(x)\ \text{(where differentiable)}.
+  \]
+  \[
+    \Ex(X)=\int_{-\infty}^{\infty} x f_X(x)\,dx,\qquad
+    \Ex(X^2)=\int_{-\infty}^{\infty} x^2 f_X(x)\,dx.
+  \]
+  \[
+    \Var(X)=\Ex(X^2)-[\Ex(X)]^2.
+  \]
+\end{frame}
+
+\subsection{Practice CDF}
+\begin{frame}{Practice CDF}
+  \[
+  F(x)=
+  \begin{cases}
+    0, & x<0,\\
+    \dfrac{e^x-1}{e-1}, & 0\le x<1,\\
+    1, & x\ge 1.
+  \end{cases}
+  \]
+  Differentiate by interval:
+  \[
+  f(x)=
+  \begin{cases}
+    \dfrac{e^x}{e-1}, & 0<x<1,\\
+    0, & \text{otherwise}.
+  \end{cases}
+  \]
+\[
+  \text{This is an increasing }e^x\text{-shaped curve (not triangular).}
+\]
+\end{frame}
+
+\subsection{Moments}
+\begin{frame}{Mean and Variance (Quick Result)}
+  For the previous density:
+  \[
+    \Ex(X)=\frac{1}{e-1}\approx 0.582,\qquad
+    \Var(X)\approx 0.0796.
+  \]
+  Also,
+  \[
+    \Ex(X^2)=\frac{e-2}{e-1},\qquad
+    \Var(X)=\Ex(X^2)-[\Ex(X)]^2.
+  \]
+  \vspace{2mm}
+\end{frame}
+
+% ==============================
+\section{Using the Z-table}
+% ==============================
+
+\subsection{Standardization}
+\begin{frame}{Standard Normal Setup}
+  If \(X\sim\Norm(\mu,\sigma^2)\), define
+  \[
+    Z=\frac{X-\mu}{\sigma}\sim\Norm(0,1).
+  \]
+  Z-table usually gives:
+  \[
+    \Phi(z)=P(Z\le z).
+  \]
+  Convert first, then read table.
+\end{frame}
+
+\subsection{Example 1}
+\begin{frame}{Z-table Example 1}
+  Let \(X\sim\Norm(70,10^2)\). Find \(P(X\le 85)\).
+  \[
+    z=\frac{85-70}{10}=1.5.
+  \]
+  \[
+    P(X\le 85)=P(Z\le 1.5)=\Phi(1.5)\approx 0.9332.
+  \]
+\end{frame}
+
+\subsection{Example 2}
+\begin{frame}{Z-table Example 2}
+  Let \(X\sim\Norm(70,10^2)\). Find \(P(60<X<80)\).
+  \[
+    P(60<X<80)=P\!\left(-1<Z<1\right)=\Phi(1)-\Phi(-1).
+  \]
+  Using the table:
+  \[
+    \Phi(1)\approx 0.8413,\quad \Phi(-1)\approx 0.1587
+  \]
+  \[
+    P(60<X<80)\approx 0.6826.
+  \]
+\end{frame}
+
+% ==============================
+\section{Practice (Quick Drills)}
+% ==============================
+
+\subsection{Practice 1}
+\begin{frame}{Practice 1: Identify Distribution}
+  \begin{itemize}
+    \item Number of emails received in 1 hour: Poisson or Exponential?
+    \item Time until next email arrives: Poisson or Exponential?
+  \end{itemize}
+  \pause
+  \textbf{Answer:}
+  \begin{itemize}
+    \item Count in a fixed window \(\rightarrow\) Poisson
+    \item Waiting time \(\rightarrow\) Exponential
+  \end{itemize}
+\end{frame}
+
+\subsection{Practice 2}
+\begin{frame}{Practice 2: Find \(\lambda\)}
+  Waiting time \(X\) is exponential with mean \(10\) minutes.
+  \begin{itemize}
+    \item Find \(\lambda\)
+    \item Write \(f(x)\)
+  \end{itemize}
+  \pause
+  \textbf{Answer:}
+  \[
+    \lambda=\frac{1}{10},\qquad
+    f(x)=\frac{1}{10}e^{-x/10},\ x>0.
+  \]
+\end{frame}
+
+\subsection{Practice 3}
+\begin{frame}{Practice 3: Memoryless}
+  \(X\sim\Exp(1/8)\). Compute \(P(X>12\mid X>5)\).
+  \pause
+  \[
+    P(X>12\mid X>5)=P(X>7)=e^{-7/8}\approx 0.4169.
+  \]
+\end{frame}
+
+\subsection{Practice 4}
+\begin{frame}{Practice 4: CDF to PDF}
+  If
+  \[
+    F(x)=
+    \begin{cases}
+      0, & x<0,\\
+      x^2, & 0\le x<1,\\
+      1, & x\ge 1,
+    \end{cases}
+  \]
+  find \(f(x)\).
+  \pause
+  \[
+    f(x)=
+    \begin{cases}
+      2x, & 0<x<1,\\
+      0, & \text{otherwise}.
+    \end{cases}
+  \]
+\end{frame}
+
+\subsection{Practice 5}
+\begin{frame}{Practice 5: Z-table}
+  If \(Z\sim\Norm(0,1)\), compute \(P(Z\le 0.84)\).
+  \pause
+  Use table:
+  \[
+    P(Z\le 0.84)=\Phi(0.84)\approx 0.7995.
+  \]
+\end{frame}
+
+% ==============================
+\section{Class Reminder}
+% ==============================
+
+\subsection{Exam 1 Review}
+\begin{frame}{Class Reminder: Exam 1 Questions}
+  \begin{itemize}
+    \item We can spend a few minutes on Exam 1 questions in this class.
+    \item Focus on common mistakes and core concepts.
+    \item Keep discussion short, then return to this week's topics.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Wrap-Up}
+% ==============================
+
+\subsection{Take-Home Messages}
+\begin{frame}{Take-Home Messages}
+  \begin{itemize}
+    \item Poisson models counts; Exponential models waiting times.
+    \item For Exponential, identify \(\lambda\) from the mean: \(\lambda=1/\Ex(X)\).
+    \item Use memoryless property to simplify conditional waiting-time problems.
+    \item For normal probability, standardize first, then use the Z-table.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Attendance Check}
+% ==============================
+
+\begin{frame}{In-Class Attendance Check (Quick)}
+  Waiting time \(X\) (minutes) follows \(\Exp(\lambda)\) with mean \(10\).
+
+  A student has already waited 3 minutes.
+  What is
+  \[
+    P(X>8\mid X>3)?
+  \]
+
+  \vspace{3mm}
+  \textit{Please submit: Full Name; Section Number; Your Answer}
+
+  \pause
+  \vspace{2mm}
+  \textbf{Answer:}
+  \[
+    P(X>8\mid X>3)=P(X>5)=e^{-0.5}\approx 0.6065.
+  \]
+\end{frame}
+
+\end{document}

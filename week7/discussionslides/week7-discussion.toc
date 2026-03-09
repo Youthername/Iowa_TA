@@ -6,9 +6,9 @@
 \beamer@subsectionintoc {2}{3}{How Interval Changes the Mean}{6}{0}{2}
 \beamer@subsectionintoc {2}{4}{Region-Size Example}{7}{0}{2}
 \beamer@sectionintoc {3}{Integration Methods (Quick Review)}{8}{0}{3}
-\beamer@subsectionintoc {3}{1}{Core Techniques}{8}{0}{3}
-\beamer@subsectionintoc {3}{2}{Common Integral Forms}{9}{0}{3}
-\beamer@subsectionintoc {3}{3}{Visual: Integral as Area}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Visual: Integral as Area}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Core Techniques}{9}{0}{3}
+\beamer@subsectionintoc {3}{3}{Common Integral Forms}{10}{0}{3}
 \beamer@sectionintoc {4}{Continuous Piecewise Example}{12}{0}{4}
 \beamer@subsectionintoc {4}{1}{Define a PDF}{12}{0}{4}
 \beamer@subsectionintoc {4}{2}{Derive CDF from PDF}{13}{0}{4}

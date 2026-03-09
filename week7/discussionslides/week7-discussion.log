@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.27)  2 MAR 2026 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.27)  2 MAR 2026 12:21
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**week7-discussion.tex
-(./week7-discussion.tex
+**d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex
+(d:/.6_TA/2020/week7/discussionslides/week7-discussion.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/beamer/beamer.cls
@@ -846,13 +847,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 128
+Overfull \hbox (68.74364pt too wide) detected at line 142
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 128.
+Package pdftex.def Info: iowa-logo.png  used on input line 142.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -862,13 +863,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 147
+Overfull \hbox (68.74364pt too wide) detected at line 160
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 147.
+Package pdftex.def Info: iowa-logo.png  used on input line 160.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -878,13 +879,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [9
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 162
+Overfull \hbox (68.74364pt too wide) detected at line 179
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 162.
+Package pdftex.def Info: iowa-logo.png  used on input line 179.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -894,13 +895,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [10
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 193
+Overfull \hbox (68.74364pt too wide) detected at line 194
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 193.
+Package pdftex.def Info: iowa-logo.png  used on input line 194.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -910,13 +911,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [11
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 211
+Overfull \hbox (68.74364pt too wide) detected at line 213
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 211.
+Package pdftex.def Info: iowa-logo.png  used on input line 213.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -926,13 +927,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [12
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 224
+Overfull \hbox (68.74364pt too wide) detected at line 226
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 224.
+Package pdftex.def Info: iowa-logo.png  used on input line 226.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -942,13 +943,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 238
+Overfull \hbox (68.74364pt too wide) detected at line 240
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 238.
+Package pdftex.def Info: iowa-logo.png  used on input line 240.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -958,13 +959,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 251
+Overfull \hbox (68.74364pt too wide) detected at line 253
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 251.
+Package pdftex.def Info: iowa-logo.png  used on input line 253.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -974,13 +975,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 270
+Overfull \hbox (68.74364pt too wide) detected at line 272
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 270.
+Package pdftex.def Info: iowa-logo.png  used on input line 272.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -992,7 +993,7 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 ]
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 270.
+Package pdftex.def Info: iowa-logo.png  used on input line 272.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1002,13 +1003,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 284
+Overfull \hbox (68.74364pt too wide) detected at line 286
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 284.
+Package pdftex.def Info: iowa-logo.png  used on input line 286.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1020,7 +1021,7 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 ]
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 284.
+Package pdftex.def Info: iowa-logo.png  used on input line 286.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1030,13 +1031,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 301
+Overfull \hbox (68.74364pt too wide) detected at line 303
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 301.
+Package pdftex.def Info: iowa-logo.png  used on input line 303.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1048,7 +1049,7 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 ]
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 301.
+Package pdftex.def Info: iowa-logo.png  used on input line 303.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1058,13 +1059,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 320
+Overfull \hbox (68.74364pt too wide) detected at line 322
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 320.
+Package pdftex.def Info: iowa-logo.png  used on input line 322.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1076,7 +1077,7 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 ]
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 320.
+Package pdftex.def Info: iowa-logo.png  used on input line 322.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1086,13 +1087,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [23
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 330
+Overfull \hbox (68.74364pt too wide) detected at line 332
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 330.
+Package pdftex.def Info: iowa-logo.png  used on input line 332.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1104,7 +1105,7 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 ]
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 330.
+Package pdftex.def Info: iowa-logo.png  used on input line 332.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1114,13 +1115,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 342
+Overfull \hbox (68.74364pt too wide) detected at line 344
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 342.
+Package pdftex.def Info: iowa-logo.png  used on input line 344.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1130,13 +1131,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [26
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 355
+Overfull \hbox (68.74364pt too wide) detected at line 357
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 355.
+Package pdftex.def Info: iowa-logo.png  used on input line 357.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1146,13 +1147,13 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 [27
 
 ]
-Overfull \hbox (68.74364pt too wide) detected at line 377
+Overfull \hbox (68.74364pt too wide) detected at line 379
   [] [][] [][][][][] [][][][][] [][][][][] [][][][][][] [][] [][] [][]  
  []
 
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 377.
+Package pdftex.def Info: iowa-logo.png  used on input line 379.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1164,7 +1165,7 @@ Overfull \hbox (68.74364pt too wide) has occurred while \output is active
 ]
 File: iowa-logo.png Graphic file (type png)
 <use iowa-logo.png>
-Package pdftex.def Info: iowa-logo.png  used on input line 377.
+Package pdftex.def Info: iowa-logo.png  used on input line 379.
 (pdftex.def)             Requested size: 47.79868pt x 22.9438pt.
 
 Overfull \hbox (68.74364pt too wide) has occurred while \output is active
@@ -1189,18 +1190,18 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `week7-discussion.out' has not changed.
-(rerunfilecheck)             Checksum: 324E240BE77EE3C33BD06D9E9A03CE5D;4701.
+(rerunfilecheck)             Checksum: FD8E82B513D8A065BADEE49FC573EF58;4701.
  ) 
 Here is how much of TeX's memory you used:
- 35609 strings out of 469514
- 858517 string characters out of 5468015
- 1381632 words of memory out of 5000000
+ 35610 strings out of 469514
+ 858626 string characters out of 5468015
+ 1382055 words of memory out of 5000000
  63550 multiletter control sequences out of 15000+600000
  638080 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,20n,107p,737b,2282s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,20n,107p,774b,2282s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/leisure/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on week7-discussion.pdf (29 pages, 239541 bytes).
+Output written on week7-discussion.pdf (29 pages, 239540 bytes).
 PDF statistics:
  2055 PDF objects out of 2073 (max. 8388607)
  1219 compressed objects within 13 object streams
