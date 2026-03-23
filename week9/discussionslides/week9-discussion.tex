@@ -1,0 +1,390 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{uiowa}
+\useoutertheme[subsection=true]{smoothbars}
+\usepackage{amsmath,amssymb}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\input{custom.tex}
+
+\title[STAT 2020 Week 9 \hfill \insertframenumber/\inserttotalframenumber]{STAT 2020 Discussion Slides}
+\subtitle{Week 9: Normal Distribution, Linear Combinations, and Sampling Distribution}
+\author{Shuo Li}
+\institute{University of Iowa}
+\date{\today}
+\logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Index (Outline)}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ==============================
+\section{Week 9 Goals}
+% ==============================
+
+\subsection{Agenda}
+\begin{frame}{Agenda}
+  \begin{itemize}
+    \item Normal distribution review and Z-table standardization
+    \item Percentiles: find quantiles, and solve for \(\mu\) or \(\sigma\)
+    \item Mean and variance of linear combinations (assume independence)
+    \item Probability with linear expressions (for example, \(P(4X>Y+1)\))
+    \item Sampling distribution of \(\bar X\), sums, and related percentiles
+    \item Attendance check
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Standardization and Z-table}
+% ==============================
+
+\subsection{Core Setup}
+\begin{frame}{Standardization Formula}
+  If \(X\sim\Norm(\mu,\sigma^2)\), define
+  \[
+    Z=\frac{X-\mu}{\sigma}\sim\Norm(0,1).
+  \]
+  Then
+  \[
+    P(X\le x)=P\!\left(Z\le \frac{x-\mu}{\sigma}\right)=\Phi\!\left(\frac{x-\mu}{\sigma}\right).
+  \]
+  \vspace{2mm}
+  Z-table usually reports \(\Phi(z)=P(Z\le z)\).
+\end{frame}
+
+\subsection{Tail and Interval Probabilities}
+\begin{frame}{Tail and Interval Forms}
+  \[
+    P(X>x)=1-\Phi\!\left(\frac{x-\mu}{\sigma}\right).
+  \]
+  \[
+    P(a<X<b)=\Phi\!\left(\frac{b-\mu}{\sigma}\right)-\Phi\!\left(\frac{a-\mu}{\sigma}\right).
+  \]
+  \vspace{2mm}
+  Common symmetry:
+  \[
+    \Phi(-z)=1-\Phi(z).
+  \]
+\end{frame}
+
+\subsection{Worked Example}
+\begin{frame}{Worked Example: Probability Between Two Values}
+  Let \(X\sim\Norm(20,4^2)\). Find \(P(15<X<26)\).
+  \[
+    z_1=\frac{15-20}{4}=-1.25,\qquad z_2=\frac{26-20}{4}=1.5.
+  \]
+  \[
+    P(15<X<26)=\Phi(1.5)-\Phi(-1.25).
+  \]
+  Using Z-table:
+  \[
+    \Phi(1.5)\approx0.9332,\qquad \Phi(-1.25)\approx0.1056.
+  \]
+  \[
+    P(15<X<26)\approx0.8276.
+  \]
+\end{frame}
+
+% ==============================
+\section{Percentiles}
+% ==============================
+
+\subsection{General Rule}
+\begin{frame}{Percentile Formula}
+  The \(p\)-th percentile \(x_p\) solves \(P(X\le x_p)=p\).
+
+  For \(X\sim\Norm(\mu,\sigma^2)\):
+  \[
+    x_p=\mu+z_p\sigma,
+  \]
+  where \(z_p\) is the \(p\)-th percentile of \(\Norm(0,1)\).
+
+  Common value:
+  \[
+    z_{0.975}\approx1.96.
+  \]
+\end{frame}
+
+\subsection{Find a Percentile}
+\begin{frame}{Example: Find the 97.5th Percentile}
+  Suppose \(X\sim\Norm(150,12^2)\). Find \(x_{0.975}\).
+  \[
+    x_{0.975}=150+1.96\times12=173.52.
+  \]
+  So the 97.5th percentile is about
+  \[
+    173.5.
+  \]
+\end{frame}
+
+\subsection{Solve for Parameters}
+\begin{frame}{Example: Solve for \(\mu\) or \(\sigma\)}
+  If \(x_{0.975}=180\) and \(\sigma=12\), then
+  \[
+    180=\mu+1.96(12)
+    \quad\Longrightarrow\quad
+    \mu=156.48.
+  \]
+
+  If \(\mu\) is known instead, solve
+  \[
+    \sigma=\frac{x_p-\mu}{z_p}.
+  \]
+\end{frame}
+
+% ==============================
+\section{Linear Combinations}
+% ==============================
+
+\subsection{Mean and Variance Rules}
+\begin{frame}{Linear Combination Rules}
+  Let \(Y=aX_1+bX_2+c\).
+  \[
+    \Ex(Y)=a\Ex(X_1)+b\Ex(X_2)+c.
+  \]
+
+  If \(X_1\ind X_2\),
+  \[
+    \Var(Y)=a^2\Var(X_1)+b^2\Var(X_2).
+  \]
+
+  More general form:
+  \[
+    \Var(aX_1+bX_2)=a^2\Var(X_1)+b^2\Var(X_2)+2ab\cov(X_1,X_2).
+  \]
+\end{frame}
+
+\subsection{Worked Example}
+\begin{frame}{Example: \(Y=0.8X_1+0.2X_2\)}
+  Suppose \(X_1,X_2\iid\Norm(20,4^2)\), and
+  \[
+    Y=0.8X_1+0.2X_2.
+  \]
+  \[
+    \Ex(Y)=0.8(20)+0.2(20)=20.
+  \]
+  \[
+    \Var(Y)=0.8^2(16)+0.2^2(16)=10.88.
+  \]
+  Since a linear combination of independent normals is normal,
+  \[
+    Y\sim\Norm(20,10.88).
+  \]
+\end{frame}
+
+% ==============================
+\section{Linear Expression Probability}
+% ==============================
+
+\subsection{Method}
+\begin{frame}{How to Handle \(P(4X>Y+1)\)-Type Questions}
+  Rewrite the inequality as one normal variable.
+
+  Define
+  \[
+    W=4X-Y.
+  \]
+  Then
+  \[
+    P(4X>Y+1)=P(W>1).
+  \]
+  If \(X,Y\) are independent normals, then \(W\) is also normal.
+\end{frame}
+
+\subsection{Worked Example}
+\begin{frame}{Example: Compute \(P(4X>Y+1)\)}
+  Let \(X\sim\Norm(2,1^2)\), \(Y\sim\Norm(5,2^2)\), independent.
+
+  Set \(W=4X-Y\). Then
+  \[
+    \Ex(W)=4(2)-5=3,
+    \qquad
+    \Var(W)=16(1^2)+2^2=20.
+  \]
+  So \(W\sim\Norm(3,20)\), and
+  \[
+    P(4X>Y+1)=P(W>1)
+    =1-\Phi\!\left(\frac{1-3}{\sqrt{20}}\right)
+    =\Phi(0.447)\approx0.672.
+  \]
+\end{frame}
+
+% ==============================
+\section{Sampling Distribution of Xbar}
+% ==============================
+
+\subsection{Main Result}
+\begin{frame}{Theorem for \(\bar X\)}
+  If \(X_1,\dots,X_n\iid\Norm(\mu,\sigma^2)\), then
+  \[
+    \bar X\sim\Norm\!\left(\mu,\frac{\sigma^2}{n}\right).
+  \]
+  Therefore
+  \[
+    Z=\frac{\bar X-\mu}{\sigma/\sqrt{n}}\sim\Norm(0,1).
+  \]
+  Also,
+  \[
+    S_n=\sum_{i=1}^n X_i\sim\Norm(n\mu,n\sigma^2).
+  \]
+\end{frame}
+
+\subsection{Probability Example}
+\begin{frame}{Example: Probability for a Sample Mean}
+  Suppose \(X_i\iid\Norm(20,4^2)\), \(n=25\). Find \(P(\bar X>21)\).
+  \[
+    \bar X\sim\Norm\!\left(20,\frac{16}{25}\right),
+    \qquad
+    \SE(\bar X)=\frac{4}{5}=0.8.
+  \]
+  \[
+    P(\bar X>21)=1-\Phi\!\left(\frac{21-20}{0.8}\right)
+    =1-\Phi(1.25)
+    \approx0.1056.
+  \]
+\end{frame}
+
+\subsection{Percentile of Sums or Averages}
+\begin{frame}{Percentiles of \(\bar X\) and \(S_n\)}
+  For \(\bar X\sim\Norm(\mu,\sigma^2/n)\):
+  \[
+    (\bar X)_p=\mu+z_p\frac{\sigma}{\sqrt{n}}.
+  \]
+  For \(S_n\sim\Norm(n\mu,n\sigma^2)\):
+  \[
+    (S_n)_p=n\mu+z_p\sqrt{n}\,\sigma.
+  \]
+  Same logic: convert to \(Z\), use Z-table, then convert back.
+\end{frame}
+
+% ==============================
+\section{Practice (Quick Drills)}
+% ==============================
+
+\subsection{Practice 1}
+\begin{frame}{Practice 1: Standardization}
+  If \(X\sim\Norm(60,8^2)\), find \(P(X>72)\).
+  \pause
+  \[
+    z=\frac{72-60}{8}=1.5,
+    \qquad
+    P(X>72)=1-\Phi(1.5)\approx0.0668.
+  \]
+\end{frame}
+
+\subsection{Practice 2}
+\begin{frame}{Practice 2: Percentile}
+  If \(X\sim\Norm(100,15^2)\), find the 90th percentile.
+  \pause
+  Use \(z_{0.90}\approx1.2816\):
+  \[
+    x_{0.90}=100+1.2816(15)=119.22.
+  \]
+\end{frame}
+
+\subsection{Practice 3}
+\begin{frame}{Practice 3: Linear Combination Moments}
+  Let \(X_1,X_2\iid\Norm(10,3^2)\), and \(Y=2X_1-X_2+5\).
+  Find \(\Ex(Y)\) and \(\Var(Y)\).
+  \pause
+  \[
+    \Ex(Y)=2(10)-10+5=15,
+    \qquad
+    \Var(Y)=2^2(9)+(-1)^2(9)=45.
+  \]
+\end{frame}
+
+\subsection{Practice 4}
+\begin{frame}{Practice 4: Linear Expression Probability}
+  If \(X\sim\Norm(1,1)\), \(Y\sim\Norm(2,4)\), independent,
+  compute \(P(4X>Y+1)\).
+  \pause
+  \[
+    W=4X-Y\sim\Norm(2,20),
+  \]
+  \[
+    P(4X>Y+1)=P(W>1)
+    =1-\Phi\!\left(\frac{1-2}{\sqrt{20}}\right)
+    =\Phi(0.224)\approx0.589.
+  \]
+\end{frame}
+
+\subsection{Practice 5}
+\begin{frame}{Practice 5: Sampling Distribution}
+  If \(X_i\iid\Norm(50,9^2)\), \(n=36\), find \(P(\bar X<52)\).
+  \pause
+  \[
+    \SE(\bar X)=\frac{9}{\sqrt{36}}=1.5,
+    \qquad
+    z=\frac{52-50}{1.5}=1.333.
+  \]
+  \[
+    P(\bar X<52)=\Phi(1.333)\approx0.9082.
+  \]
+\end{frame}
+
+% ==============================
+\section{Class Reminder}
+% ==============================
+
+\subsection{Exam 2 Policy}
+\begin{frame}{Class Reminder: Exam 2 Questions}
+  \begin{itemize}
+    \item We can review concepts and methods from homework and quizzes.
+    \item Please do not discuss any actual Exam 2 question in class.
+    \item Students can discuss exam-specific questions during office hours.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Wrap-Up}
+% ==============================
+
+\subsection{Take-Home Messages}
+\begin{frame}{Take-Home Messages}
+  \begin{itemize}
+    \item Standardize first; then use the Z-table.
+    \item Percentiles follow \(x_p=\mu+z_p\sigma\) (or its inverse forms).
+    \item For independent variables, linear-combination variance adds by squared coefficients.
+    \item Convert expressions and sample means into one normal variable before computing probability.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Attendance Check}
+% ==============================
+
+\begin{frame}{In-Class Attendance Check (Quick)}
+  Suppose \(X_1,\dots,X_{25}\iid\Norm(70,10^2)\).
+
+  What is
+  \[
+    P(\bar X<73)?
+  \]
+  \[
+    \textit{Write your answer in } \Phi(\cdot)\textit{ form only (no decimal approximation).}
+  \]
+
+  \vspace{3mm}
+  \textit{Please submit: Full Name; Section Number; Your Answer}
+
+  \pause
+  \vspace{2mm}
+  \textbf{Answer:}
+  \[
+    \bar X\sim\Norm\!\left(70,\frac{100}{25}\right),\quad
+    z=\frac{73-70}{10/5}=1.5,
+  \]
+  \[
+    P(\bar X<73)=\Phi(1.5).
+  \]
+\end{frame}
+
+\end{document}
+

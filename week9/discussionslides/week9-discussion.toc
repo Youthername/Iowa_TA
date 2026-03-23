@@ -1,0 +1,31 @@
+\beamer@sectionintoc {1}{Week 9 Goals}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Agenda}{3}{0}{1}
+\beamer@sectionintoc {2}{Standardization and Z-table}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Core Setup}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Tail and Interval Probabilities}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Worked Example}{6}{0}{2}
+\beamer@sectionintoc {3}{Percentiles}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{General Rule}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Find a Percentile}{8}{0}{3}
+\beamer@subsectionintoc {3}{3}{Solve for Parameters}{9}{0}{3}
+\beamer@sectionintoc {4}{Linear Combinations}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Mean and Variance Rules}{10}{0}{4}
+\beamer@subsectionintoc {4}{2}{Worked Example}{11}{0}{4}
+\beamer@sectionintoc {5}{Linear Expression Probability}{12}{0}{5}
+\beamer@subsectionintoc {5}{1}{Method}{12}{0}{5}
+\beamer@subsectionintoc {5}{2}{Worked Example}{13}{0}{5}
+\beamer@sectionintoc {6}{Sampling Distribution of Xbar}{14}{0}{6}
+\beamer@subsectionintoc {6}{1}{Main Result}{14}{0}{6}
+\beamer@subsectionintoc {6}{2}{Probability Example}{15}{0}{6}
+\beamer@subsectionintoc {6}{3}{Percentile of Sums or Averages}{16}{0}{6}
+\beamer@sectionintoc {7}{Practice (Quick Drills)}{17}{0}{7}
+\beamer@subsectionintoc {7}{1}{Practice 1}{17}{0}{7}
+\beamer@subsectionintoc {7}{2}{Practice 2}{19}{0}{7}
+\beamer@subsectionintoc {7}{3}{Practice 3}{21}{0}{7}
+\beamer@subsectionintoc {7}{4}{Practice 4}{23}{0}{7}
+\beamer@subsectionintoc {7}{5}{Practice 5}{25}{0}{7}
+\beamer@sectionintoc {8}{Class Reminder}{27}{0}{8}
+\beamer@subsectionintoc {8}{1}{Exam 2 Policy}{27}{0}{8}
+\beamer@sectionintoc {9}{Wrap-Up}{28}{0}{9}
+\beamer@subsectionintoc {9}{1}{Take-Home Messages}{28}{0}{9}
+\beamer@sectionintoc {10}{Attendance Check}{29}{0}{10}
