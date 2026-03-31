@@ -1,0 +1,20 @@
+\beamer@sectionintoc {1}{Week 11 Goals}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Agenda}{3}{0}{1}
+\beamer@sectionintoc {2}{Propagation of Error (Delta Method)}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Core Setup}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Case 1: Mean Known}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Case 2: Mean Unknown}{6}{0}{2}
+\beamer@subsectionintoc {2}{4}{Engineering Notation}{7}{0}{2}
+\beamer@subsectionintoc {2}{5}{Delta Method Example}{8}{0}{2}
+\beamer@sectionintoc {3}{Central Limit Theorem (CLT)}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{When CLT Is Needed}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Normal Population}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{Non-Normal Population}{11}{0}{3}
+\beamer@subsectionintoc {3}{4}{CLT Practice}{12}{0}{3}
+\beamer@sectionintoc {4}{Optional Review (If Time Permits)}{14}{0}{4}
+\beamer@subsectionintoc {4}{1}{Discrete Distribution Review}{14}{0}{4}
+\beamer@subsectionintoc {4}{2}{Continuous Distribution Review}{15}{0}{4}
+\beamer@subsectionintoc {4}{3}{Calculus Drill}{16}{0}{4}
+\beamer@sectionintoc {5}{Wrap-Up}{18}{0}{5}
+\beamer@subsectionintoc {5}{1}{Take-Home Messages}{18}{0}{5}
+\beamer@sectionintoc {6}{Attendance Check}{19}{0}{6}

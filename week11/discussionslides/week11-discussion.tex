@@ -1,0 +1,314 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{uiowa}
+\useoutertheme[subsection=true]{smoothbars}
+\usepackage{amsmath,amssymb}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\input{custom.tex}
+
+\title[STAT 2020 Week 11 \hfill \insertframenumber/\inserttotalframenumber]{STAT 2020 Discussion Slides}
+\subtitle{Week 11: Delta Method and CLT}
+\author{Shuo Li}
+\institute{University of Iowa}
+\date{\today}
+\logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Index (Outline)}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ==============================
+\section{Week 11 Goals}
+% ==============================
+
+\subsection{Agenda}
+\begin{frame}{Agenda}
+  \begin{itemize}
+    \item Propagation of error (Delta Method)
+    \item Two approximation cases:
+    \begin{itemize}
+      \item \(\mu_X\) known
+      \item \(\mu_X\) unknown (plug-in)
+    \end{itemize}
+    \item Engineering notation refresher
+    \item CLT decision rules and examples
+    \item Optional quick review of key distributions
+    \item Optional differentiation/integration drills
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Propagation of Error (Delta Method)}
+% ==============================
+
+\subsection{Core Setup}
+\begin{frame}{Delta Method: Core Setup}
+  Let \(X\) be a random variable with mean \(\mu_X\) and variance \(\sigma_X^2\).
+  For a smooth function \(g(\cdot)\), define
+  \[
+    Y = g(X).
+  \]
+  First-order Taylor expansion around \(\mu_X\):
+  \[
+    g(X)\approx g(\mu_X)+g'(\mu_X)(X-\mu_X).
+  \]
+  Therefore,
+  \[
+    \Ex(Y)\approx g(\mu_X),\qquad
+    \Var(Y)\approx \big(g'(\mu_X)\big)^2\sigma_X^2.
+  \]
+\end{frame}
+
+\subsection{Case 1: Mean Known}
+\begin{frame}{Case 1: \(\mu_X\) Known}
+  If \(\mu_X\) is known, evaluate derivative at the true mean:
+  \[
+    \Var(g(X))\approx \left[g'(\mu_X)\right]^2\Var(X).
+  \]
+  If \(X=\bar{X}\) from sample size \(n\), then
+  \[
+    \Var(\bar{X})=\frac{\sigma^2}{n}
+    \quad\Longrightarrow\quad
+    \Var(g(\bar{X}))\approx \left[g'(\mu)\right]^2\frac{\sigma^2}{n}.
+  \]
+  Standard error form:
+  \[
+    \SE\!\big(g(\bar{X})\big)\approx \left|g'(\mu)\right|\frac{\sigma}{\sqrt{n}}.
+  \]
+\end{frame}
+
+\subsection{Case 2: Mean Unknown}
+\begin{frame}{Case 2: \(\mu_X\) Unknown (Plug-in)}
+  In practice, \(\mu_X\) is often unknown.
+  Use plug-in estimate \(\bar{X}\) for \(\mu_X\):
+  \[
+    g'(\mu_X)\approx g'(\bar{X}).
+  \]
+  Then estimate
+  \[
+    \widehat{\Var}\!\big(g(\bar{X})\big)
+    \approx
+    \left[g'(\bar{X})\right]^2\frac{s^2}{n},
+  \]
+  and
+  \[
+    \widehat{\SE}\!\big(g(\bar{X})\big)
+    \approx
+    \left|g'(\bar{X})\right|\frac{s}{\sqrt{n}}.
+  \]
+\end{frame}
+
+\subsection{Engineering Notation}
+\begin{frame}{Engineering Notation (Quick Refresher)}
+  For measured quantity \(x\) with uncertainty \(\Delta x\):
+  \[
+    x = x_0 \pm \Delta x.
+  \]
+  Relative (fractional) error:
+  \[
+    \frac{\Delta x}{x_0}.
+  \]
+  If \(y=g(x)\), first-order propagation gives
+  \[
+    \Delta y \approx \left|g'(x_0)\right|\Delta x,
+    \qquad
+    \frac{\Delta y}{|y_0|}
+    \approx
+    \left|\frac{x_0 g'(x_0)}{g(x_0)}\right|\frac{\Delta x}{|x_0|}.
+  \]
+\end{frame}
+
+\subsection{Delta Method Example}
+\begin{frame}{Example: \(g(x)=\sqrt{x}\)}
+  Suppose \(\bar{X}\) estimates \(\mu=100\), with \(\Var(\bar{X})=4\).
+  Let \(Y=g(\bar{X})=\sqrt{\bar{X}}\).
+
+  \[
+    g'(x)=\frac{1}{2\sqrt{x}},\qquad g'(100)=\frac{1}{20}.
+  \]
+  Approximate variance:
+  \[
+    \Var(Y)\approx \left(\frac{1}{20}\right)^2\cdot 4=\frac{1}{100}=0.01.
+  \]
+  So
+  \[
+    \SE(Y)\approx 0.1.
+  \]
+\end{frame}
+
+% ==============================
+\section{Central Limit Theorem (CLT)}
+% ==============================
+
+\subsection{When CLT Is Needed}
+\begin{frame}{CLT: Need It or Not?}
+  Let \(X_1,\dots,X_n\) be i.i.d. with mean \(\mu\), variance \(\sigma^2\).
+  \[
+    Z=\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}.
+  \]
+  CLT says \(Z\) is approximately \(\Norm(0,1)\) for large \(n\).
+
+  \vspace{3pt}
+  Decision rule for discussion:
+  \begin{itemize}
+    \item If population is normal: \(\bar{X}\) is exactly normal for any \(n\).
+    \item If population is not normal and \(n<30\): do not force CLT approximation.
+    \item If population is not normal and \(n\ge 30\): CLT approximation is usually reasonable.
+  \end{itemize}
+\end{frame}
+
+\subsection{Normal Population}
+\begin{frame}{Example A: \(X\) Normal, Small \(n\)}
+  If \(X\sim\Norm(\mu,\sigma^2)\), then
+  \[
+    \bar{X}\sim\Norm\!\left(\mu,\frac{\sigma^2}{n}\right)
+  \]
+  for every sample size \(n\), including \(n<30\).
+
+  \vspace{3pt}
+  Key point:
+  \begin{itemize}
+    \item This result is exact.
+    \item CLT is not needed to justify normality of \(\bar{X}\) here.
+  \end{itemize}
+\end{frame}
+
+\subsection{Non-Normal Population}
+\begin{frame}{Example B: \(X\) Not Normal}
+  Suppose \(X\) is right-skewed.
+  \begin{itemize}
+    \item If \(n=12\): distribution of \(\bar{X}\) may still be skewed.
+    \item If \(n=80\): distribution of \(\bar{X}\) is often close to normal by CLT.
+  \end{itemize}
+
+  \vspace{3pt}
+  Practical note:
+  \begin{itemize}
+    \item For small \(n\) with non-normal \(X\), exact distribution of \(\bar{X}\) can be hard to derive.
+    \item In that case, avoid over-claiming normal approximation.
+  \end{itemize}
+\end{frame}
+
+\subsection{CLT Practice}
+\begin{frame}{Quick Practice: CLT Decision}
+  Decide if normal approximation for \(\bar{X}\) is justified:
+  \begin{enumerate}
+    \item \(X\) normal, \(n=8\)
+    \item \(X\) heavily skewed, \(n=18\)
+    \item \(X\) moderately skewed, \(n=64\)
+  \end{enumerate}
+  \pause
+  \textbf{Answers:}
+  \begin{itemize}
+    \item (1) Yes, exact normality (no CLT needed).
+    \item (2) No, \(n\) too small for a routine CLT claim.
+    \item (3) Yes, CLT approximation is typically acceptable.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Optional Review (If Time Permits)}
+% ==============================
+
+\subsection{Discrete Distribution Review}
+\begin{frame}{Discrete Review: PMF, Mean, Variance}
+  \textbf{Hypergeometric} \(X\sim\mathrm{Hypergeo}(N,K,n)\)
+  \[
+    \Ex(X)=n\frac{K}{N},\qquad
+    \Var(X)=n\frac{K}{N}\left(1-\frac{K}{N}\right)\frac{N-n}{N-1}.
+  \]
+
+  \textbf{Negative Binomial} \(X\sim\NBin(r,p)\) (failures before \(r\)-th success)
+  \[
+    \Ex(X)=\frac{r(1-p)}{p},\qquad
+    \Var(X)=\frac{r(1-p)}{p^2}.
+  \]
+
+  \textbf{Poisson} \(X\sim\Pois(\lambda)\)
+  \[
+    \Ex(X)=\lambda,\qquad \Var(X)=\lambda.
+  \]
+\end{frame}
+
+\subsection{Continuous Distribution Review}
+\begin{frame}{Continuous Review: PDF, Mean, Variance}
+  \textbf{Uniform} \(X\sim\Unif(a,b)\)
+  \[
+    f(x)=\frac{1}{b-a},\ a<x<b,\qquad
+    \Ex(X)=\frac{a+b}{2},\quad
+    \Var(X)=\frac{(b-a)^2}{12}.
+  \]
+
+  \textbf{Exponential} \(X\sim\Exp(\lambda)\)
+  \[
+    f(x)=\lambda e^{-\lambda x},\ x>0,\qquad
+    \Ex(X)=\frac{1}{\lambda},\quad
+    \Var(X)=\frac{1}{\lambda^2}.
+  \]
+\end{frame}
+
+\subsection{Calculus Drill}
+\begin{frame}{Calculus Drill: Mean and Variance}
+  Let \(f(x)=2x\), \(0<x<1\).
+  \begin{itemize}
+    \item Verify \(f\) is a valid PDF.
+    \item Compute \(\Ex(X)\).
+    \item Compute \(\Var(X)\).
+  \end{itemize}
+  \pause
+  \textbf{Answer sketch:}
+  \[
+    \int_0^1 2x\,dx=1,\quad
+    \Ex(X)=\int_0^1 x(2x)\,dx=\frac{2}{3},
+  \]
+  \[
+    \Ex(X^2)=\int_0^1 x^2(2x)\,dx=\frac{1}{2},\quad
+    \Var(X)=\frac{1}{2}-\left(\frac{2}{3}\right)^2=\frac{1}{18}.
+  \]
+\end{frame}
+
+% ==============================
+\section{Wrap-Up}
+% ==============================
+
+\subsection{Take-Home Messages}
+\begin{frame}{Take-Home Messages}
+  \begin{itemize}
+    \item Delta Method gives first-order approximations for transformed means and variances.
+    \item Distinguish clearly between \(\mu_X\) known vs unknown plug-in cases.
+    \item CLT usage depends on population shape and sample size.
+    \item Keep distribution formulas and calculus tools ready for quick review.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Attendance Check}
+% ==============================
+
+\begin{frame}{In-Class Attendance Check (Quick)}
+  Let \(\bar{X}\) have mean \(\mu=25\) and variance \(9/n\), with \(n=36\).
+  Define \(Y=\log(\bar{X})\).
+
+  Use first-order Delta Method to approximate \(\SE(Y)\).
+
+  \vspace{3mm}
+  \textit{Please submit: Full Name; Section Number; Your Answer}
+
+  \pause
+  \vspace{2mm}
+  \textbf{Answer:}
+  \[
+    g'(x)=\frac{1}{x},\quad
+    \SE(\bar{X})=\frac{3}{6}=0.5,\quad
+    \SE(Y)\approx \left|\frac{1}{25}\right|(0.5)=0.02.
+  \]
+\end{frame}
+
+\end{document}

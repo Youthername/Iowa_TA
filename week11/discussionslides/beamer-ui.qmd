@@ -1,0 +1,180 @@
+---
+title: "STAT 2020 Discussion Slides"
+subtitle: "Week 7: Poisson, Integration, and Continuous Distributions"
+author: "TA"
+institute: "University of Iowa"
+date: "`r Sys.Date()`"
+bibliography: refs.bib
+output: 
+  beamer_presentation:
+    theme: "Warsaw"
+    colortheme: "uiowa"
+    keep-tex: true
+    slide_level: 3 # can toggle this to 2 if subsections are not needed
+    incremental: true 
+    includes: 
+      in_header: 
+        - ./custom.tex
+header-includes:
+   - \AtBeginDocument{\title[STAT 2020 Week 7\hspace{18em} \insertframenumber\ of \inserttotalframenumber]{STAT 2020 Discussion Slides}}
+   - \logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+---
+
+# Week 7 Goals
+
+## Agenda
+
+### This Discussion Covers
+
+  - Show how Poisson means change with interval/region size
+  - Review core integration methods
+  - Work one piecewise continuous example:
+    - CDF from PDF
+    - PDF from CDF
+    - \(\Ex(X)\) and \(\Var(X)\)
+  - Class policy reminder on exam-question discussions
+
+# Poisson Rate and Window Size
+
+## Time-Interval Example
+
+### Call Center Arrivals
+
+Assume arrivals follow \(N_t \sim \Pois(\lambda t)\).
+
+If the average is 3 calls per 10 minutes, then:
+
+\[
+\lambda = 0.3 \text{ calls/minute}
+\]
+
+So expected counts scale with interval length:
+
+  - 5 minutes: \(\Ex(N_5) = 0.3 \times 5 = 1.5\)
+  - 20 minutes: \(\Ex(N_{20}) = 0.3 \times 20 = 6\)
+  - 1 hour: \(\Ex(N_{60}) = 18\)
+
+## Region-Size Example
+
+### Spatial Poisson Process
+
+Suppose emergency events occur at rate \(\rho = 2\) per square mile per day.
+
+For area \(A\):
+\[
+N_A \sim \Pois(\rho A), \quad \Ex(N_A) = \rho A
+\]
+
+  - \(A=1\): \(\Ex(N_A)=2\)
+  - \(A=3.5\): \(\Ex(N_A)=7\)
+  - \(A=10\): \(\Ex(N_A)=20\)
+
+# Integration Methods (Quick Review)
+
+## Core Techniques
+
+### Method Checklist
+
+  - Substitution
+  - Integration by parts
+  - Partial fractions
+  - Symmetry tricks
+  - Piecewise integration
+  - Optional advanced method (skip if time is tight)
+
+## Key Identities
+
+### Useful Formulas
+
+\[
+\int f(g(x))g'(x)\,dx = \int f(u)\,du
+\]
+
+\[
+\int u\,dv = uv - \int v\,du
+\]
+
+# Continuous Piecewise Example
+
+## Define a PDF
+
+### Two Non-Zero Segments
+
+\[
+f_X(x)=
+\begin{cases}
+x, & 0<x\le 1,\\
+2-x, & 1<x<2,\\
+0, & \text{otherwise}.
+\end{cases}
+\]
+
+This is a continuous-distribution example with \(f(X=x)=0\) for every single point \(x\).
+
+## Derive CDF from PDF
+
+### Piecewise Integration
+
+\[
+F_X(x)=
+\begin{cases}
+0, & x\le 0,\\
+\frac{x^2}{2}, & 0<x\le 1,\\
+1-\frac{(2-x)^2}{2}, & 1<x<2,\\
+1, & x\ge 2.
+\end{cases}
+\]
+
+## Recover PDF from CDF
+
+### Differentiate by Interval
+
+\[
+f_X(x)=F'_X(x)=
+\begin{cases}
+x, & 0<x<1,\\
+2-x, & 1<x<2,\\
+0, & \text{otherwise}.
+\end{cases}
+\]
+
+At isolated points (e.g., \(x=1\)), the exact point value does not change probabilities.
+
+## Compute \(\Ex(X)\)
+
+### Mean
+
+\[
+\Ex(X)=\int_0^1 x\cdot x\,dx + \int_1^2 x(2-x)\,dx = 1
+\]
+
+## Compute \(\Var(X)\)
+
+### Variance
+
+\[
+\Ex(X^2)=\int_0^1 x^2\cdot x\,dx + \int_1^2 x^2(2-x)\,dx = \frac{7}{6}
+\]
+
+\[
+\Var(X)=\Ex(X^2)-\Ex(X)^2=\frac{7}{6}-1=\frac{1}{6}
+\]
+
+# Class Reminder
+
+## Exam Questions Policy
+
+### What to Say in Discussion
+
+  - Do not discuss specific exam questions in class.
+  - If students ask, invite them to office hours.
+  - Suggested response: "I cannot discuss exam details in class, but I can help during office hours."
+
+## Take home messages 
+
+  - In Poisson models, means scale linearly with time/region size.
+  - Use systematic piecewise integration for CDF/PDF/\(\Ex\)/\(\Var\) tasks.
+  - Keep exam-specific conversations in office hours only.
+
+
+## References {.allowframebreaks}
