@@ -1,0 +1,104 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Week 12 Goals}{3}{Week 12 Goals}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Agenda}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{Agenda}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\sectionentry {2}{Parameters vs. Statistics}{4}{Parameters vs. Statistics}{0}}
+\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Core Definitions}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{Core Definitions}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Computation Refresher}}
+\headcommand {\slideentry {2}{2}{1}{5/5}{Computation Refresher}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{6}{Plot Interpretation}}
+\headcommand {\slideentry {2}{3}{1}{6/6}{Plot Interpretation}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{7}{Worked Boxplot Example}}
+\headcommand {\slideentry {2}{4}{1}{7/7}{Worked Boxplot Example}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{8}{Quick Identification Drill}}
+\headcommand {\slideentry {2}{5}{1}{8/9}{Quick Identification Drill}{0}}
+\headcommand {\beamer@framepages {8}{9}}
+\headcommand {\beamer@sectionpages {4}{9}}
+\headcommand {\beamer@subsectionpages {8}{9}}
+\headcommand {\sectionentry {3}{CI for Mean (sigma known)}{10}{CI for Mean (sigma known)}{0}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{When to Use This CI}}
+\headcommand {\slideentry {3}{1}{1}{10/10}{When to Use This CI}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{Main Formula}}
+\headcommand {\slideentry {3}{2}{1}{11/11}{Main Formula}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{12}{Worked Example}}
+\headcommand {\slideentry {3}{3}{1}{12/12}{Worked Example}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{13}{Reasonable Value Check}}
+\headcommand {\slideentry {3}{4}{1}{13/13}{Reasonable Value Check}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@sectionpages {10}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\sectionentry {4}{Margin of Error and Sample Size}{14}{Margin of Error and Sample Size}{0}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{14}{Key Quantities}}
+\headcommand {\slideentry {4}{1}{1}{14/14}{Key Quantities}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{15}{Solve for Required n}}
+\headcommand {\slideentry {4}{2}{1}{15/15}{Solve for Required n}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{16}{Sample Size Example}}
+\headcommand {\slideentry {4}{3}{1}{16/16}{Sample Size Example}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{17}{Special Note}}
+\headcommand {\slideentry {4}{4}{1}{17/17}{Special Note}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@sectionpages {14}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\sectionentry {5}{Practice (Quick Drills)}{18}{Practice (Quick Drills)}{0}}
+\headcommand {\beamer@subsectionpages {18}{17}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{18}{Practice 1}}
+\headcommand {\slideentry {5}{1}{1}{18/19}{Practice 1}{0}}
+\headcommand {\beamer@framepages {18}{19}}
+\headcommand {\beamer@subsectionpages {18}{19}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{20}{Practice 2}}
+\headcommand {\slideentry {5}{2}{1}{20/21}{Practice 2}{0}}
+\headcommand {\beamer@framepages {20}{21}}
+\headcommand {\beamer@subsectionpages {20}{21}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{22}{Practice 3}}
+\headcommand {\slideentry {5}{3}{1}{22/23}{Practice 3}{0}}
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\beamer@sectionpages {18}{23}}
+\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\sectionentry {6}{Wrap-Up}{24}{Wrap-Up}{0}}
+\headcommand {\beamer@subsectionpages {24}{23}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{24}{Take-Home Messages}}
+\headcommand {\slideentry {6}{1}{1}{24/24}{Take-Home Messages}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@sectionpages {24}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\sectionentry {7}{Attendance Check}{25}{Attendance Check}{0}}
+\headcommand {\slideentry {7}{0}{1}{25/26}{}{0}}
+\headcommand {\beamer@framepages {25}{26}}
+\headcommand {\beamer@partpages {1}{26}}
+\headcommand {\beamer@subsectionpages {25}{26}}
+\headcommand {\beamer@sectionpages {25}{26}}
+\headcommand {\beamer@documentpages {26}}
+\headcommand {\gdef \inserttotalframenumber {21}}

@@ -1,0 +1,25 @@
+\beamer@sectionintoc {1}{Week 12 Goals}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Agenda}{3}{0}{1}
+\beamer@sectionintoc {2}{Parameters vs. Statistics}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Core Definitions}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Computation Refresher}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Plot Interpretation}{6}{0}{2}
+\beamer@subsectionintoc {2}{4}{Worked Boxplot Example}{7}{0}{2}
+\beamer@subsectionintoc {2}{5}{Quick Identification Drill}{8}{0}{2}
+\beamer@sectionintoc {3}{CI for Mean (sigma known)}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{When to Use This CI}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Main Formula}{11}{0}{3}
+\beamer@subsectionintoc {3}{3}{Worked Example}{12}{0}{3}
+\beamer@subsectionintoc {3}{4}{Reasonable Value Check}{13}{0}{3}
+\beamer@sectionintoc {4}{Margin of Error and Sample Size}{14}{0}{4}
+\beamer@subsectionintoc {4}{1}{Key Quantities}{14}{0}{4}
+\beamer@subsectionintoc {4}{2}{Solve for Required n}{15}{0}{4}
+\beamer@subsectionintoc {4}{3}{Sample Size Example}{16}{0}{4}
+\beamer@subsectionintoc {4}{4}{Special Note}{17}{0}{4}
+\beamer@sectionintoc {5}{Practice (Quick Drills)}{18}{0}{5}
+\beamer@subsectionintoc {5}{1}{Practice 1}{18}{0}{5}
+\beamer@subsectionintoc {5}{2}{Practice 2}{20}{0}{5}
+\beamer@subsectionintoc {5}{3}{Practice 3}{22}{0}{5}
+\beamer@sectionintoc {6}{Wrap-Up}{24}{0}{6}
+\beamer@subsectionintoc {6}{1}{Take-Home Messages}{24}{0}{6}
+\beamer@sectionintoc {7}{Attendance Check}{25}{0}{7}
