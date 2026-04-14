@@ -1,0 +1,435 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{uiowa}
+\useoutertheme[subsection=true]{smoothbars}
+\usepackage{amsmath,amssymb}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\input{custom.tex}
+
+\title[STAT 2020 Week 13 \hfill \insertframenumber/\inserttotalframenumber]{STAT 2020 Discussion Slides}
+\subtitle{Week 13: Hypothesis Testing for a Mean (\(\sigma\) Known)}
+\author{Shuo Li}
+\institute{University of Iowa}
+\date{\today}
+\logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Index (Outline)}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ==============================
+\section{Week 13 Goals}
+% ==============================
+
+\subsection{Agenda}
+\begin{frame}{Agenda}
+  \begin{itemize}
+    \item Practice hypothesis testing for \(\mu\) when \(\sigma\) is known
+    \item Use the 3-step testing framework clearly and consistently
+    \item Work both left-tailed and right-tailed tests
+    \item Explain rejection regions and their link to significance level \(\alpha\)
+    \item Compute and interpret p-values with worked examples
+    \item Attendance check
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{3-Step Framework for Testing \(\mu\)}
+% ==============================
+
+\subsection{Core Setup}
+\begin{frame}{Test Setup: Mean with Known \(\sigma\)}
+  We test a population mean with known standard deviation \(\sigma\).
+
+  \vspace{2mm}
+  Typical hypotheses:
+  \[
+    H_0:\mu=\mu_0
+    \quad\text{vs.}\quad
+    H_a:\mu<\mu_0,\ \mu>\mu_0,\ \text{or}\ \mu\ne\mu_0.
+  \]
+
+  Test statistic:
+  \[
+    Z=\frac{\bar X-\mu_0}{\sigma/\sqrt{n}}.
+  \]
+
+  \vspace{1mm}
+  Conditions used in this course:
+  \begin{itemize}
+    \item Normal population: valid for any \(n\).
+    \item Non-normal population: use when \(n\ge 30\).
+  \end{itemize}
+\end{frame}
+
+\subsection{Template}
+\begin{frame}{3-Step Testing Template}
+  \textbf{Step 1 (Setup):}
+  \begin{itemize}
+    \item State \(H_0\), \(H_a\), and significance level \(\alpha\).
+    \item Identify tail type (left or right in today's focus).
+  \end{itemize}
+
+  \vspace{1mm}
+  \textbf{Step 2 (Decision Rule):}
+  \begin{itemize}
+    \item Find critical value and rejection region.
+    \item Right-tail: reject if \(Z\ge z_{\alpha}\).
+    \item Left-tail: reject if \(Z\le -z_{\alpha}\).
+  \end{itemize}
+
+  \vspace{1mm}
+  \textbf{Step 3 (Compute + Conclude):}
+  \begin{itemize}
+    \item Compute observed \(z_{\text{obs}}\).
+    \item Compare with rejection rule (or p-value) and conclude in context.
+  \end{itemize}
+\end{frame}
+
+\subsection{Left-Tailed Example}
+\begin{frame}{Example A: Left-Tailed Test}
+  A filling process targets \(\mu_0=500\) ml.
+  Known \(\sigma=12\), sample size \(n=36\), sample mean \(\bar X=495\).
+  Test at \(\alpha=0.05\):
+  \[
+    H_0:\mu=500,\qquad H_a:\mu<500.
+  \]
+
+  \vspace{1mm}
+  \textbf{Step 2:} Left-tail critical value is \(-z_{0.05}=-1.645\).
+  Reject if \(Z\le -1.645\).
+
+  \vspace{1mm}
+  \textbf{Step 3:}
+  \[
+    z_{\text{obs}}=\frac{495-500}{12/\sqrt{36}}=\frac{-5}{2}=-2.50.
+  \]
+  Since \(-2.50\le -1.645\), reject \(H_0\).
+
+  \vspace{1mm}
+  Conclusion: evidence suggests the true mean is below 500 ml.
+\end{frame}
+
+\subsection{Right-Tailed Example}
+\begin{frame}{Example B: Right-Tailed Test}
+  A process has benchmark \(\mu_0=100\).
+  Known \(\sigma=8\), \(n=64\), \(\bar X=103\).
+  Test at \(\alpha=0.01\):
+  \[
+    H_0:\mu=100,\qquad H_a:\mu>100.
+  \]
+
+  \vspace{1mm}
+  \textbf{Step 2:} Right-tail critical value is \(z_{0.01}=2.326\).
+  Reject if \(Z\ge 2.326\).
+
+  \vspace{1mm}
+  \textbf{Step 3:}
+  \[
+    z_{\text{obs}}=\frac{103-100}{8/\sqrt{64}}=\frac{3}{1}=3.00.
+  \]
+  Since \(3.00\ge 2.326\), reject \(H_0\).
+
+  \vspace{1mm}
+  Conclusion: evidence suggests the true mean is above 100.
+\end{frame}
+
+% ==============================
+\section{Rejection Regions and Significance}
+% ==============================
+
+\subsection{Interpretation}
+\begin{frame}{What Is a Rejection Region?}
+  Rejection region = values of the test statistic that lead us to reject \(H_0\).
+
+  \vspace{2mm}
+  It is chosen so that, under \(H_0\):
+  \[
+    P(\text{falling in rejection region})=\alpha.
+  \]
+
+  \vspace{1mm}
+  Interpretation of \(\alpha\):
+  \begin{itemize}
+    \item \(\alpha\) controls Type I error (false alarm) probability.
+    \item Smaller \(\alpha\): harder to reject \(H_0\).
+    \item Larger \(\alpha\): easier to reject \(H_0\).
+  \end{itemize}
+\end{frame}
+
+\subsection{Common Forms}
+\begin{frame}{Rejection Rules by Tail Type}
+  For \(Z\sim \Norm(0,1)\) under \(H_0\):
+
+  \vspace{1mm}
+  \textbf{Right-tailed} \(H_a:\mu>\mu_0\):
+  \[
+    \text{Reject }H_0\ \text{if } z_{\text{obs}}\ge z_{\alpha}.
+  \]
+
+  \textbf{Left-tailed} \(H_a:\mu<\mu_0\):
+  \[
+    \text{Reject }H_0\ \text{if } z_{\text{obs}}\le -z_{\alpha}.
+  \]
+
+  \textbf{Two-sided (quick reminder)} \(H_a:\mu\ne\mu_0\):
+  \[
+    \text{Reject }H_0\ \text{if } |z_{\text{obs}}|\ge z_{\alpha/2}.
+  \]
+\end{frame}
+
+\subsection{Visual Intuition}
+\begin{frame}{Sketch: Right-Tail Rejection Region}
+  \centering
+  \begin{tikzpicture}[scale=0.95]
+    \draw[->] (-3.6,0) -- (3.6,0) node[right] {\(z\)};
+    \draw[domain=-3.2:3.2,smooth,variable=\x,thick] plot ({\x},{2*exp(-\x*\x/2)});
+
+    \begin{scope}
+      \clip (1.645,0) rectangle (3.25,2.1);
+      \fill[uigold!40,domain=-3.2:3.2,smooth,variable=\x]
+        (1.645,0) -- plot ({\x},{2*exp(-\x*\x/2)}) -- (3.25,0) -- cycle;
+    \end{scope}
+
+    \draw[dashed] (1.645,0) -- (1.645,0.52);
+    \node[above] at (1.645,0.52) {\(z_{\alpha}\)};
+    \node at (2.5,0.18) {\(\alpha\)};
+  \end{tikzpicture}
+
+  \vspace{1mm}
+  Right-tailed test at \(\alpha=0.05\): reject when \(z_{\text{obs}}\) lands in shaded tail.
+\end{frame}
+
+% ==============================
+\section{p-Values: Meaning and Computation}
+% ==============================
+
+\subsection{Definition}
+\begin{frame}{What Is a p-Value?}
+  The p-value is the probability, assuming \(H_0\) is true, of getting a test statistic
+  at least as extreme as what we observed.
+
+  \vspace{2mm}
+  For observed \(z_{\text{obs}}\):
+  \[
+    \text{Right-tail: }p=P(Z\ge z_{\text{obs}}),
+    \qquad
+    \text{Left-tail: }p=P(Z\le z_{\text{obs}}).
+  \]
+  \[
+    \text{Two-sided: }p=2P(Z\ge |z_{\text{obs}}|).
+  \]
+
+  \vspace{1mm}
+  Important: p-value is \textbf{not} \(P(H_0\text{ is true})\).
+\end{frame}
+
+\subsection{Decision Rule}
+\begin{frame}{How p-Value Connects to \(\alpha\)}
+  Equivalent decision rule:
+  \begin{itemize}
+    \item If \(p\le \alpha\): reject \(H_0\).
+    \item If \(p>\alpha\): fail to reject \(H_0\).
+  \end{itemize}
+
+  \vspace{2mm}
+  Interpretation:
+  \begin{itemize}
+    \item Smaller p-value \(\Rightarrow\) stronger evidence against \(H_0\).
+    \item p-value is the smallest significance level at which \(H_0\) would be rejected.
+  \end{itemize}
+\end{frame}
+
+\subsection{Worked Example 1 (Right Tail)}
+\begin{frame}{p-Value Example 1: Right-Tailed}
+  Test:
+  \[
+    H_0:\mu=50,\qquad H_a:\mu>50.
+  \]
+  Given \(\sigma=10\), \(n=25\), \(\bar X=54\):
+  \[
+    z_{\text{obs}}=\frac{54-50}{10/\sqrt{25}}=2.00.
+  \]
+
+  Right-tail p-value:
+  \[
+    p=P(Z\ge 2.00)=0.0228.
+  \]
+
+  \vspace{1mm}
+  Decisions:
+  \begin{itemize}
+    \item At \(\alpha=0.05\): reject \(H_0\).
+    \item At \(\alpha=0.01\): fail to reject \(H_0\).
+  \end{itemize}
+\end{frame}
+
+\subsection{Worked Example 2 (Left Tail)}
+\begin{frame}{p-Value Example 2: Left-Tailed}
+  Test:
+  \[
+    H_0:\mu=70,\qquad H_a:\mu<70.
+  \]
+  Given \(\sigma=15\), \(n=25\), \(\bar X=65.8\):
+  \[
+    z_{\text{obs}}=\frac{65.8-70}{15/\sqrt{25}}=\frac{-4.2}{3}=-1.40.
+  \]
+
+  Left-tail p-value:
+  \[
+    p=P(Z\le -1.40)=0.0808.
+  \]
+
+  \vspace{1mm}
+  At \(\alpha=0.05\), \(p>\alpha\), so fail to reject \(H_0\).
+\end{frame}
+
+\subsection{Worked Example 3 (Match with Rejection Region)}
+\begin{frame}{p-Value Example 3: Same Conclusion as Critical-Value Method}
+  Right-tailed test with \(\alpha=0.10\), observed \(z_{\text{obs}}=1.58\).
+
+  \vspace{1mm}
+  p-value method:
+  \[
+    p=P(Z\ge 1.58)=0.0571<0.10\Rightarrow \text{reject }H_0.
+  \]
+
+  Critical-value method:
+  \[
+    z_{0.10}=1.282,
+    \quad
+    1.58\ge 1.282\Rightarrow \text{reject }H_0.
+  \]
+
+  \vspace{1mm}
+  Both methods must agree when done correctly.
+\end{frame}
+
+\subsection{Visual Intuition}
+\begin{frame}{Sketch: p-Value as Tail Area}
+  \centering
+  \begin{tikzpicture}[scale=0.95]
+    \draw[->] (-3.6,0) -- (3.6,0) node[right] {\(z\)};
+    \draw[domain=-3.2:3.2,smooth,variable=\x,thick] plot ({\x},{2*exp(-\x*\x/2)});
+
+    \begin{scope}
+      \clip (1.20,0) rectangle (3.25,2.1);
+      \fill[uiblue!25,domain=-3.2:3.2,smooth,variable=\x]
+        (1.20,0) -- plot ({\x},{2*exp(-\x*\x/2)}) -- (3.25,0) -- cycle;
+    \end{scope}
+
+    \draw[dashed] (1.20,0) -- (1.20,0.78);
+    \node[above] at (1.20,0.78) {\(z_{\text{obs}}\)};
+    \node at (2.25,0.22) {p-value};
+  \end{tikzpicture}
+
+  \vspace{1mm}
+  For a right-tailed test, p-value is the shaded area to the right of \(z_{\text{obs}}\).
+\end{frame}
+
+% ==============================
+\section{Practice (Quick Drills)}
+% ==============================
+
+\subsection{Practice 1}
+\begin{frame}{Practice 1: Left-Tailed Decision}
+  Given \(\mu_0=120\), \(\sigma=18\), \(n=36\), \(\bar X=114\), \(\alpha=0.05\).
+
+  Test \(H_0:\mu=120\) vs \(H_a:\mu<120\).
+
+  \pause
+  \[
+    z_{\text{obs}}=\frac{114-120}{18/6}=-2.00,
+    \quad
+    -z_{0.05}=-1.645.
+  \]
+  Since \(-2.00\le -1.645\), reject \(H_0\).
+\end{frame}
+
+\subsection{Practice 2}
+\begin{frame}{Practice 2: Right-Tailed p-Value}
+  Given \(\mu_0=40\), \(\sigma=5\), \(n=25\), \(\bar X=41.5\), \(\alpha=0.05\).
+
+  Test \(H_0:\mu=40\) vs \(H_a:\mu>40\).
+
+  \pause
+  \[
+    z_{\text{obs}}=\frac{41.5-40}{5/5}=1.50,
+    \quad
+    p=P(Z\ge 1.50)=0.0668.
+  \]
+  Since \(p>0.05\), fail to reject \(H_0\).
+\end{frame}
+
+\subsection{Practice 3}
+\begin{frame}{Practice 3: Interpret a p-Value}
+  A right-tailed test reports \(p=0.032\).
+
+  \begin{enumerate}
+    \item Decision at \(\alpha=0.05\)?
+    \item Decision at \(\alpha=0.01\)?
+  \end{enumerate}
+
+  \pause
+  \textbf{Answer:}
+  \begin{itemize}
+    \item At \(\alpha=0.05\): reject \(H_0\).
+    \item At \(\alpha=0.01\): fail to reject \(H_0\).
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Wrap-Up}
+% ==============================
+
+\subsection{Take-Home Messages}
+\begin{frame}{Take-Home Messages}
+  \begin{itemize}
+    \item Follow the 3-step hypothesis-testing structure every time.
+    \item Rejection region is chosen from \(\alpha\), before seeing data.
+    \item p-value is a tail probability under \(H_0\), not a probability that \(H_0\) is true.
+    \item Critical-value and p-value methods should give the same conclusion.
+    \item State conclusions in context (about \(\mu\)).
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Attendance Check}
+% ==============================
+
+\begin{frame}{In-Class Attendance Check (Quick)}
+  Test at \(\alpha=0.05\):
+  \[
+    H_0:\mu=200,
+    \qquad
+    H_a:\mu>200.
+  \]
+  Given \(\sigma=20\), \(n=64\), \(\bar X=204.5\).
+
+  \vspace{1mm}
+  1) Compute \(z_{\text{obs}}\).\\
+  2) Find the p-value.\\
+  3) State the decision.
+
+  \vspace{3mm}
+  \textit{Please submit: Full Name; Section Number; Your Answer}
+
+  \pause
+  \vspace{2mm}
+  \textbf{Answer:}
+  \[
+    z_{\text{obs}}=\frac{204.5-200}{20/8}=1.80,
+    \quad
+    p=P(Z\ge 1.80)=0.0359.
+  \]
+  Since \(0.0359<0.05\), reject \(H_0\).
+\end{frame}
+
+\end{document}
