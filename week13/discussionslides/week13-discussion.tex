@@ -58,7 +58,7 @@
 
   Test statistic:
   \[
-    Z=\frac{\bar X-\mu_0}{\sigma/\sqrt{n}}.
+    Z^*=\frac{\bar X-\mu_0}{\sigma/\sqrt{n}}.
   \]
 
   \vspace{1mm}
@@ -81,14 +81,14 @@
   \textbf{Step 2 (Decision Rule):}
   \begin{itemize}
     \item Find critical value and rejection region.
-    \item Right-tail: reject if \(Z\ge z_{\alpha}\).
-    \item Left-tail: reject if \(Z\le -z_{\alpha}\).
+    \item Right-tail: reject if \(Z^*\ge z_{\alpha}\).
+    \item Left-tail: reject if \(Z^*\le -z_{\alpha}\).
   \end{itemize}
 
   \vspace{1mm}
   \textbf{Step 3 (Compute + Conclude):}
   \begin{itemize}
-    \item Compute observed \(z_{\text{obs}}\).
+    \item Compute observed \(z^*\).
     \item Compare with rejection rule (or p-value) and conclude in context.
   \end{itemize}
 \end{frame}
@@ -104,12 +104,12 @@
 
   \vspace{1mm}
   \textbf{Step 2:} Left-tail critical value is \(-z_{0.05}=-1.645\).
-  Reject if \(Z\le -1.645\).
+  Reject if \(Z^*\le -1.645\).
 
   \vspace{1mm}
   \textbf{Step 3:}
   \[
-    z_{\text{obs}}=\frac{495-500}{12/\sqrt{36}}=\frac{-5}{2}=-2.50.
+    z^*=\frac{495-500}{12/\sqrt{36}}=\frac{-5}{2}=-2.50.
   \]
   Since \(-2.50\le -1.645\), reject \(H_0\).
 
@@ -128,12 +128,12 @@
 
   \vspace{1mm}
   \textbf{Step 2:} Right-tail critical value is \(z_{0.01}=2.326\).
-  Reject if \(Z\ge 2.326\).
+  Reject if \(Z^*\ge 2.326\).
 
   \vspace{1mm}
   \textbf{Step 3:}
   \[
-    z_{\text{obs}}=\frac{103-100}{8/\sqrt{64}}=\frac{3}{1}=3.00.
+    z^*=\frac{103-100}{8/\sqrt{64}}=\frac{3}{1}=3.00.
   \]
   Since \(3.00\ge 2.326\), reject \(H_0\).
 
@@ -166,22 +166,22 @@
 
 \subsection{Common Forms}
 \begin{frame}{Rejection Rules by Tail Type}
-  For \(Z\sim \Norm(0,1)\) under \(H_0\):
+  For \(Z^*\sim \Norm(0,1)\) under \(H_0\):
 
   \vspace{1mm}
   \textbf{Right-tailed} \(H_a:\mu>\mu_0\):
   \[
-    \text{Reject }H_0\ \text{if } z_{\text{obs}}\ge z_{\alpha}.
+    \text{Reject }H_0\ \text{if } z^*\ge z_{\alpha}.
   \]
 
   \textbf{Left-tailed} \(H_a:\mu<\mu_0\):
   \[
-    \text{Reject }H_0\ \text{if } z_{\text{obs}}\le -z_{\alpha}.
+    \text{Reject }H_0\ \text{if } z^*\le -z_{\alpha}.
   \]
 
   \textbf{Two-sided (quick reminder)} \(H_a:\mu\ne\mu_0\):
   \[
-    \text{Reject }H_0\ \text{if } |z_{\text{obs}}|\ge z_{\alpha/2}.
+    \text{Reject }H_0\ \text{if } |z^*|\ge z_{\alpha/2}.
   \]
 \end{frame}
 
@@ -204,7 +204,7 @@
   \end{tikzpicture}
 
   \vspace{1mm}
-  Right-tailed test at \(\alpha=0.05\): reject when \(z_{\text{obs}}\) lands in shaded tail.
+  Right-tailed test at \(\alpha=0.05\): reject when \(z^*\) lands in shaded tail.
 \end{frame}
 
 % ==============================
@@ -217,14 +217,14 @@
   at least as extreme as what we observed.
 
   \vspace{2mm}
-  For observed \(z_{\text{obs}}\):
+  For observed \(z^*\):
   \[
-    \text{Right-tail: }p=P(Z\ge z_{\text{obs}}),
+    \text{Right-tail: }p=P(Z^*\ge z^*),
     \qquad
-    \text{Left-tail: }p=P(Z\le z_{\text{obs}}).
+    \text{Left-tail: }p=P(Z^*\le z^*).
   \]
   \[
-    \text{Two-sided: }p=2P(Z\ge |z_{\text{obs}}|).
+    \text{Two-sided: }p=2P(Z^*\ge |z^*|).
   \]
 
   \vspace{1mm}
@@ -255,12 +255,12 @@
   \]
   Given \(\sigma=10\), \(n=25\), \(\bar X=54\):
   \[
-    z_{\text{obs}}=\frac{54-50}{10/\sqrt{25}}=2.00.
+    z^*=\frac{54-50}{10/\sqrt{25}}=2.00.
   \]
 
   Right-tail p-value:
   \[
-    p=P(Z\ge 2.00)=0.0228.
+    p=P(Z^*\ge 2.00)=0.0228.
   \]
 
   \vspace{1mm}
@@ -279,12 +279,12 @@
   \]
   Given \(\sigma=15\), \(n=25\), \(\bar X=65.8\):
   \[
-    z_{\text{obs}}=\frac{65.8-70}{15/\sqrt{25}}=\frac{-4.2}{3}=-1.40.
+    z^*=\frac{65.8-70}{15/\sqrt{25}}=\frac{-4.2}{3}=-1.40.
   \]
 
   Left-tail p-value:
   \[
-    p=P(Z\le -1.40)=0.0808.
+    p=P(Z^*\le -1.40)=0.0808.
   \]
 
   \vspace{1mm}
@@ -293,12 +293,12 @@
 
 \subsection{Worked Example 3 (Match with Rejection Region)}
 \begin{frame}{p-Value Example 3: Same Conclusion as Critical-Value Method}
-  Right-tailed test with \(\alpha=0.10\), observed \(z_{\text{obs}}=1.58\).
+  Right-tailed test with \(\alpha=0.10\), observed \(z^*=1.58\).
 
   \vspace{1mm}
   p-value method:
   \[
-    p=P(Z\ge 1.58)=0.0571<0.10\Rightarrow \text{reject }H_0.
+    p=P(Z^*\ge 1.58)=0.0571<0.10\Rightarrow \text{reject }H_0.
   \]
 
   Critical-value method:
@@ -326,12 +326,12 @@
     \end{scope}
 
     \draw[dashed] (1.20,0) -- (1.20,0.78);
-    \node[above] at (1.20,0.78) {\(z_{\text{obs}}\)};
+    \node[above] at (1.20,0.78) {\(z^*\)};
     \node at (2.25,0.22) {p-value};
   \end{tikzpicture}
 
   \vspace{1mm}
-  For a right-tailed test, p-value is the shaded area to the right of \(z_{\text{obs}}\).
+  For a right-tailed test, p-value is the shaded area to the right of \(z^*\).
 \end{frame}
 
 % ==============================
@@ -346,7 +346,7 @@
 
   \pause
   \[
-    z_{\text{obs}}=\frac{114-120}{18/6}=-2.00,
+    z^*=\frac{114-120}{18/6}=-2.00,
     \quad
     -z_{0.05}=-1.645.
   \]
@@ -361,9 +361,9 @@
 
   \pause
   \[
-    z_{\text{obs}}=\frac{41.5-40}{5/5}=1.50,
+    z^*=\frac{41.5-40}{5/5}=1.50,
     \quad
-    p=P(Z\ge 1.50)=0.0668.
+    p=P(Z^*\ge 1.50)=0.0668.
   \]
   Since \(p>0.05\), fail to reject \(H_0\).
 \end{frame}
@@ -414,7 +414,7 @@
   Given \(\sigma=20\), \(n=64\), \(\bar X=204.5\).
 
   \vspace{1mm}
-  1) Compute \(z_{\text{obs}}\).\\
+  1) Compute \(z^*\).\\
   2) Find the p-value.\\
   3) State the decision.
 
@@ -425,9 +425,9 @@
   \vspace{2mm}
   \textbf{Answer:}
   \[
-    z_{\text{obs}}=\frac{204.5-200}{20/8}=1.80,
+    z^*=\frac{204.5-200}{20/8}=1.80,
     \quad
-    p=P(Z\ge 1.80)=0.0359.
+    p=P(Z^*\ge 1.80)=0.0359.
   \]
   Since \(0.0359<0.05\), reject \(H_0\).
 \end{frame}

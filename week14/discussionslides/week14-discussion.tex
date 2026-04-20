@@ -1,0 +1,349 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{uiowa}
+\useoutertheme[subsection=true]{smoothbars}
+\usepackage{amsmath,amssymb}
+\input{custom.tex}
+
+\title[STAT 2020 Week 14 \hfill \insertframenumber/\inserttotalframenumber]{STAT 2020 Discussion Slides}
+\subtitle{Week 14: One-Sample and Two-Sample Z/t Tests for Means}
+\author{Shuo Li}
+\institute{University of Iowa}
+\date{\today}
+\logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Index (Outline)}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ==============================
+\section{Notation and Reminders}
+% ==============================
+
+\subsection{Unified Setup}
+\begin{frame}{Unified Hypothesis Setup and Notation}
+  Throughout this week, write hypotheses as:
+  \[
+    H_0: \theta = \theta_0
+    \quad\text{vs.}\quad
+    H_a: \theta > \theta_0,\ \theta < \theta_0,\ \text{or}\ \theta \ne \theta_0.
+  \]
+
+  \vspace{1mm}
+  Common symbols:
+  \begin{itemize}
+    \item One-sample mean: \(\theta=\mu\)
+    \item Two-sample mean difference: \(\theta=\mu_1-\mu_2\), usually \(\theta_0=d_0\) (often \(d_0=0\))
+    \item Test statistics: \(Z^*\) for Z-tests, \(t^*\) for t-tests
+    \item One-sample t: \(\df=n-1\); pooled two-sample t: \(\df=n_1+n_2-2\)
+  \end{itemize}
+\end{frame}
+
+\subsection{CI Reminder}
+\begin{frame}{Reminder About Confidence Intervals}
+  \begin{itemize}
+    \item Unless explicitly stated otherwise, \textbf{``the confidence interval'' means the standard two-sided CI}.
+    \item In one-sided tests, a corresponding one-sided CI can also be reported.
+    \item In this slide set, each worked test includes a matching one-sided CI to align with the tail direction.
+  \end{itemize}
+\end{frame}
+
+\subsection{Test Menu}
+\begin{frame}{Which Test to Use? (Quick Menu)}
+  \begin{itemize}
+    \item One sample, \(\sigma\) known \(\Rightarrow\) one-sample Z test
+    \item Two independent samples, \(\sigma_1,\sigma_2\) known \(\Rightarrow\) two-sample Z test
+    \item One sample, \(\sigma\) unknown \(\Rightarrow\) one-sample t test
+    \item Two independent samples, \(\sigma_1=\sigma_2\) unknown \(\Rightarrow\) pooled two-sample t test
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{One-Sample Z Test}
+% ==============================
+
+\subsection{Template}
+\begin{frame}{One-Sample Z: Formula Template}
+  Test statistic:
+  \[
+    Z^*=\frac{\bar X-\mu_0}{\sigma/\sqrt{n}}.
+  \]
+
+  For right-tailed \(H_a:\mu>\mu_0\):
+  \[
+    \text{Reject }H_0\text{ if }Z^*>z_{\alpha},
+    \qquad
+    p\text{-value}=P(Z>Z^*).
+  \]
+
+  Matching \((1-\alpha)100\%\) lower one-sided CI:
+  \[
+    \left(\bar X-z_{\alpha}\frac{\sigma}{\sqrt{n}},\ \infty\right).
+  \]
+\end{frame}
+
+\subsection{Example 1}
+\begin{frame}{Example 1: One-Sample Z (Right-Tailed)}
+  Data: \(n=64,\ \bar X=9.3,\ \sigma=2.5\). Test at \(\alpha=0.05\):
+  \[
+    H_0:\mu=8.5
+    \quad\text{vs.}\quad
+    H_a:\mu>8.5.
+  \]
+
+  \textbf{Step 1:} Setup above.
+
+  \textbf{Step 2:}
+  \[
+    Z^*=\frac{9.3-8.5}{2.5/\sqrt{64}}=2.56,
+    \quad
+    z_{0.05}=1.645.
+  \]
+  Since \(2.56>1.645\), reject \(H_0\).
+
+  \textbf{Step 3:} Evidence supports \(\mu>8.5\).
+
+  \vspace{1mm}
+  p-value: \(P(Z>2.56)=0.0052\).
+
+  Matching 95\% lower one-sided CI for \(\mu\):
+  \[
+    \left(9.3-1.645\cdot\frac{2.5}{8},\ \infty\right)
+    =(8.79,\infty).
+  \]
+\end{frame}
+
+% ==============================
+\section{Two-Sample Z Test}
+% ==============================
+
+\subsection{Template}
+\begin{frame}{Two-Sample Z: Formula Template}
+  Use when two samples are independent and \(\sigma_1,\sigma_2\) are known.
+
+  \[
+    Z^*=\frac{(\bar X_1-\bar X_2)-d_0}{\sqrt{\sigma_1^2/n_1+\sigma_2^2/n_2}}.
+  \]
+
+  For right-tailed \(H_a:\mu_1-\mu_2>d_0\):
+  \[
+    \text{Reject }H_0\text{ if }Z^*>z_{\alpha},
+    \qquad
+    p\text{-value}=P(Z>Z^*).
+  \]
+
+  Matching \((1-\alpha)100\%\) lower one-sided CI for \(\mu_1-\mu_2\):
+  \[
+    \left((\bar X_1-\bar X_2)-z_{\alpha}\sqrt{\sigma_1^2/n_1+\sigma_2^2/n_2},\ \infty\right).
+  \]
+\end{frame}
+
+\subsection{Example 2}
+\begin{frame}{Example 2: Two-Sample Z (Right-Tailed)}
+  Data: \(\bar X_1=52.1,\ \bar X_2=50.8,\ n_1=36,\ n_2=64,\ \sigma_1=3,\ \sigma_2=4\), \(\alpha=0.05\).
+
+  \[
+    H_0:\mu_1-\mu_2=0
+    \quad\text{vs.}\quad
+    H_a:\mu_1-\mu_2>0.
+  \]
+
+  \textbf{Step 1:} Setup above.
+
+  \textbf{Step 2:}
+  \[
+    Z^*=\frac{52.1-50.8}{\sqrt{3^2/36+4^2/64}}
+    =\frac{1.3}{0.707}=1.84,
+    \quad
+    z_{0.05}=1.645.
+  \]
+  Since \(1.84>1.645\), reject \(H_0\).
+
+  \textbf{Step 3:} Evidence supports \(\mu_1>\mu_2\).
+
+  \vspace{1mm}
+  p-value: \(P(Z>1.84)=0.0329\).
+
+  Matching 95\% lower one-sided CI for \(\mu_1-\mu_2\):
+  \[
+    (1.3-1.645\cdot 0.707,\ \infty)=(0.14,\infty).
+  \]
+\end{frame}
+
+% ==============================
+\section{One-Sample t Test}
+% ==============================
+
+\subsection{Template}
+\begin{frame}{One-Sample t: Formula Template}
+  Use when one sample and \(\sigma\) is unknown.
+
+  \[
+    t^*=\frac{\bar X-\mu_0}{s/\sqrt{n}},
+    \qquad
+    T\sim t_{n-1}\ \text{under }H_0.
+  \]
+
+  For left-tailed \(H_a:\mu<\mu_0\):
+  \[
+    \text{Reject }H_0\text{ if }t^*<-t_{\alpha,n-1},
+    \qquad
+    p\text{-value}=P(T_{n-1}<t^*).
+  \]
+
+  Matching \((1-\alpha)100\%\) upper one-sided CI for \(\mu\):
+  \[
+    \left(-\infty,\ \bar X+t_{\alpha,n-1}\frac{s}{\sqrt{n}}\right).
+  \]
+\end{frame}
+
+\subsection{Example 3}
+\begin{frame}{Example 3: One-Sample t (Left-Tailed)}
+  Data: \(n=16,\ \bar X=48.8,\ s=3.2\). Test at \(\alpha=0.05\):
+  \[
+    H_0:\mu=50
+    \quad\text{vs.}\quad
+    H_a:\mu<50.
+  \]
+
+  \textbf{Step 1:} Setup above.
+
+  \textbf{Step 2:}
+  \[
+    t^*=\frac{48.8-50}{3.2/\sqrt{16}}=-1.50,
+    \quad
+    \df=15,
+    \quad
+    -t_{0.05,15}=-1.753.
+  \]
+  Since \(-1.50>-1.753\), fail to reject \(H_0\).
+
+  \textbf{Step 3:} Not enough evidence that \(\mu<50\).
+
+  \vspace{1mm}
+  p-value: \(P(T_{15}<-1.50)\approx0.077\).
+
+  Matching 95\% upper one-sided CI for \(\mu\):
+  \[
+    \left(-\infty,\ 48.8+1.753\cdot\frac{3.2}{4}\right)=(-\infty,50.20).
+  \]
+\end{frame}
+
+% ==============================
+\section{Two-Sample t Test (Pooled)}
+% ==============================
+
+\subsection{Template}
+\begin{frame}{Two-Sample Pooled t: Formula Template}
+  Use when samples are independent and population variances are assumed equal.
+
+  \[
+    s_p=\sqrt{\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}},
+  \]
+  \[
+    t^*=\frac{(\bar X_1-\bar X_2)-d_0}{s_p\sqrt{1/n_1+1/n_2}},
+    \qquad
+    T\sim t_{n_1+n_2-2}\ \text{under }H_0.
+  \]
+
+  For right-tailed \(H_a:\mu_1-\mu_2>d_0\):
+  \[
+    \text{Reject }H_0\text{ if }t^*>t_{\alpha,n_1+n_2-2},
+    \qquad
+    p\text{-value}=P(T_{n_1+n_2-2}>t^*).
+  \]
+\end{frame}
+
+\subsection{Example 4}
+\begin{frame}{Example 4: Two-Sample Pooled t (Right-Tailed)}
+  Data: \(\bar X_1=81.5,\ \bar X_2=78.6,\ n_1=12,\ n_2=10,\ s_1=4.0,\ s_2=3.5\), \(\alpha=0.05\).
+
+  \[
+    H_0:\mu_1-\mu_2=0
+    \quad\text{vs.}\quad
+    H_a:\mu_1-\mu_2>0.
+  \]
+
+  \textbf{Step 1:} Setup above.
+
+  \textbf{Step 2:}
+  \[
+    s_p=\sqrt{\frac{11(4.0^2)+9(3.5^2)}{20}}=3.78,
+    \quad
+    t^*=\frac{81.5-78.6}{3.78\sqrt{1/12+1/10}}=1.79.
+  \]
+  \[
+    \df=20,
+    \quad
+    t_{0.05,20}=1.725.
+  \]
+  Since \(1.79>1.725\), reject \(H_0\).
+
+  \textbf{Step 3:} Evidence supports \(\mu_1>\mu_2\).
+\end{frame}
+
+\begin{frame}{Example 4 (Cont.): p-Value and CI}
+  From \(t^*=1.79\) with \(\df=20\):
+  \[
+    p\text{-value}=P(T_{20}>1.79)\approx0.044.
+  \]
+
+  Since \(p<0.05\), reject \(H_0\).
+
+  Matching 95\% lower one-sided CI for \(\mu_1-\mu_2\):
+  \[
+    (2.9-1.725\cdot 1.62,\ \infty)=(0.10,\infty).
+  \]
+\end{frame}
+
+% ==============================
+\section{Wrap-Up}
+% ==============================
+
+\subsection{Take-Home Messages}
+\begin{frame}{Take-Home Messages}
+  \begin{itemize}
+    \item Always decide test type first (one/two sample, Z/t, known/unknown variance).
+    \item Keep notation consistent: \(Z^*\), \(t^*\), \(z_{\alpha}\), \(t_{\alpha,\nu}\), \(d_0\), \(s_p\).
+    \item Use the same 3-step structure every time.
+    \item p-value method and critical-value method should agree.
+    \item Unless specified, ``the confidence interval'' means the two-sided CI.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Attendance Check}
+% ==============================
+
+\begin{frame}{In-Class Attendance Check (Simple)}
+  A random sample has \(n=25,\ \bar X=10.6,\ s=2.5\).
+
+  Test at \(\alpha=0.05\):
+  \[
+    H_0:\mu=10
+    \quad\text{vs.}\quad
+    H_a:\mu>10.
+  \]
+
+  At \(\alpha=0.05\), perform the appropriate test and report:
+  test type, test statistic, p-value, and decision.
+
+  \vspace{2mm}
+  \textit{Please submit: Full Name; Section Number; Your Answer}
+
+  \pause
+  \vspace{2mm}
+  \textbf{Answer (concise):}
+
+  One-sample \(t\) test (\(\sigma\) unknown):
+  \(t^*=1.20\), \(p=P(T_{24}>1.20)\approx0.121>0.05\),
+  so fail to reject \(H_0\).
+\end{frame}
+
+\end{document}
