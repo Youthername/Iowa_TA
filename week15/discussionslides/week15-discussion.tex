@@ -1,0 +1,338 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{uiowa}
+\useoutertheme[subsection=true]{smoothbars}
+\usepackage{amsmath,amssymb}
+\input{custom.tex}
+
+\title[STAT 2020 Week 15 \hfill \insertframenumber/\inserttotalframenumber]{STAT 2020 Discussion Slides}
+\subtitle{Week 15: Two-Sample Proportion Test and Chi-Squared Test for Independence}
+\author{Shuo Li}
+\institute{University of Iowa}
+\date{\today}
+\logo{\includegraphics[width=0.12\textwidth]{iowa-logo.png}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Index (Outline)}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ==============================
+\section{Week 15 Announcements}
+% ==============================
+
+\subsection{SPOT Survey Reminder}
+\begin{frame}{SPOT Survey Reminder}
+  Please remind students:
+  \begin{itemize}
+    \item If more than 50\% of the class completes SPOT, everyone gets an additional 5\% increase on the quiz portion (about 1 point).
+    \item This is on top of the previously promised 5\% quiz curve.
+    \item Encourage students to complete it as soon as possible.
+  \end{itemize}
+\end{frame}
+
+\subsection{Today's Agenda}
+\begin{frame}{Agenda}
+  \begin{itemize}
+    \item Brief announcement and logistics
+    \item Two-sample proportion hypothesis test (for interest; not on final)
+    \item Review chi-squared test for independence with full 3-step workflow
+    \item Work one complete 3\(\times\)2 chi-squared example
+    \item If extra time: categorical vs quantitative data; chi-squared distribution shape
+    \item Quick attendance check
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Two-Sample Proportion Test}
+% ==============================
+
+\subsection{When and Why}
+\begin{frame}{Two-Sample Proportion Test: Context}
+  Compare proportions from two independent groups:
+  \[
+    p_1- p_2.
+  \]
+
+  Typical hypotheses:
+  \[
+    H_0:p_1-p_2=0
+    \quad\text{vs.}\quad
+    H_a:p_1-p_2>0,\ p_1-p_2<0,\ \text{or}\ p_1-p_2\ne 0.
+  \]
+
+  \vspace{1mm}
+  \textbf{Course note:} this topic is included for student interest and will \textbf{not} be on the final exam.
+\end{frame}
+
+\subsection{Test Statistic}
+\begin{frame}{Score Test Formula (Pooled Under \(H_0\))}
+  Let
+  \[
+    \hat p_1=\frac{x_1}{n_1},\quad
+    \hat p_2=\frac{x_2}{n_2},\quad
+    \tilde p=\frac{x_1+x_2}{n_1+n_2}.
+  \]
+
+  Under \(H_0:p_1=p_2\), use pooled SE:
+  \[
+    Z^*=\frac{(\hat p_1-\hat p_2)-0}{\sqrt{\tilde p(1-\tilde p)\left(\frac1{n_1}+\frac1{n_2}\right)}}.
+  \]
+
+  Right-tailed decision:
+  \[
+    \text{Reject }H_0\text{ if }Z^*>z_{\alpha},
+    \qquad
+    p\text{-value}=P(Z>Z^*).
+  \]
+\end{frame}
+
+\subsection{Conditions}
+\begin{frame}{Conditions Checklist}
+  \begin{itemize}
+    \item Two random samples (or random assignment in each group)
+    \item Independence within each group and between groups
+    \item Normal approximation is reasonable under \(H_0\):
+    \[
+      n_1\tilde p,\ n_1(1-\tilde p),\ n_2\tilde p,\ n_2(1-\tilde p)
+      \text{ are all sufficiently large (rule of thumb: }\ge 5\text{)}.
+    \]
+  \end{itemize}
+\end{frame}
+
+\subsection{Worked Example}
+\begin{frame}{Example: Two-Sample Proportion (Right-Tailed)}
+  New tutoring app vs. standard method:
+  \[
+    x_1=54,\ n_1=90,\ \hat p_1=0.60;
+    \qquad
+    x_2=36,\ n_2=90,\ \hat p_2=0.40.
+  \]
+  Test at \(\alpha=0.05\):
+  \[
+    H_0:p_1-p_2=0
+    \quad\text{vs.}\quad
+    H_a:p_1-p_2>0.
+  \]
+
+  \textbf{Step 2:}
+  \[
+    \tilde p=\frac{54+36}{180}=0.50,
+    \quad
+    Z^*=\frac{0.60-0.40}{\sqrt{0.5(0.5)(1/90+1/90)}}=2.68.
+  \]
+  \[
+    z_{0.05}=1.645,
+    \qquad
+    2.68>1.645\Rightarrow\text{reject }H_0.
+  \]
+
+  \textbf{Step 3:} evidence supports a higher success proportion with the new app.\newline
+  p-value \(=P(Z>2.68)\approx 0.0037\).
+\end{frame}
+
+\subsection{CI Reminder}
+\begin{frame}{CI for \(p_1-p_2\) (Unpooled SE)}
+  For a two-sided \((1-\alpha)100\%\) CI:
+  \[
+    (\hat p_1-\hat p_2)\pm z_{\alpha/2}
+    \sqrt{\frac{\hat p_1(1-\hat p_1)}{n_1}+\frac{\hat p_2(1-\hat p_2)}{n_2}}.
+  \]
+
+  For the tutoring example:
+  \[
+    0.20\pm 1.96\sqrt{\frac{0.6\cdot0.4}{90}+\frac{0.4\cdot0.6}{90}}
+    =0.20\pm 0.143.
+  \]
+  \[
+    \text{95\% CI for }p_1-p_2\text{: }(0.057,\ 0.343).
+  \]
+\end{frame}
+
+% ==============================
+\section{Chi-Squared Test for Independence}
+% ==============================
+
+\subsection{3-Step Template}
+\begin{frame}{Chi-Squared Independence Test: 3-Step Template}
+  \small
+  \textbf{Step 1 (Setup):}
+  \[
+    H_0:\ \text{Row variable and column variable are independent}
+  \]
+  \[
+    H_a:\ \text{They are not independent}.
+  \]
+
+  \vspace{1mm}
+  \centering
+  \begin{tabular}{ll}
+    \hline
+    Symbol & Meaning \\
+    \hline
+    \(o_{ij}\) & observed count in cell \((i,j)\) \\
+    \(e_{ij}\) & expected count in cell \((i,j)\) \\
+    \(r,c\) & number of rows, columns \\
+    \hline
+  \end{tabular}
+
+  \raggedright
+  \vspace{1mm}
+  \textbf{Step 2 (Decision Rule):}
+  \[
+    e_{ij}=\frac{(\text{row total})(\text{column total})}{n},
+    \qquad
+    \chi^{2*}=\sum\frac{(o_{ij}-e_{ij})^2}{e_{ij}}.
+  \]
+  \[
+    \df=(r-1)(c-1),
+    \quad
+    \text{Reject }H_0\text{ if }\chi^{2*}>\chi^2_{\alpha,\df}.
+  \]
+
+  \textbf{Step 3 (Conclude):} compare by critical value or by p-value.
+\end{frame}
+
+\subsection{Worked 3x2 Example}
+\begin{frame}{Example Data (3x2 Table)}
+  Study style vs. pass/fail on a quiz:
+
+  \vspace{1mm}
+  \centering
+  \begin{tabular}{lccc}
+    \hline
+    Study Style & Pass & Fail & Row Total \\
+    \hline
+    Notes only & 30 & 10 & 40 \\
+    Videos only & 18 & 22 & 40 \\
+    Both methods & 27 & 13 & 40 \\
+    \hline
+    Column Total & 75 & 45 & 120 \\
+    \hline
+  \end{tabular}
+
+  \vspace{2mm}
+  Under \(H_0\), expected counts for each row are:
+  \[
+    E(\text{Pass})=40\cdot\frac{75}{120}=25,
+    \qquad
+    E(\text{Fail})=40\cdot\frac{45}{120}=15.
+  \]
+\end{frame}
+
+\begin{frame}{Example (Cont.): Test Statistic and Decision}
+  Compute
+  \[
+    \chi^{2*}=\sum\frac{(o-e)^2}{e}
+    =\frac{(30-25)^2}{25}+\frac{(10-15)^2}{15}
+  \]
+  \[
+    \quad+\frac{(18-25)^2}{25}+\frac{(22-15)^2}{15}
+    +\frac{(27-25)^2}{25}+\frac{(13-15)^2}{15}
+    =8.32.
+  \]
+
+  \[
+    \df=(3-1)(2-1)=2,
+    \qquad
+    \chi^2_{0.05,2}=5.99.
+  \]
+
+  Since \(8.32>5.99\), reject \(H_0\).
+
+  \vspace{1mm}
+  p-value \(=P(\chi^2_2>8.32)\approx0.016\).
+
+  \vspace{1mm}
+  Conclusion: study style and quiz outcome are associated.
+\end{frame}
+
+% ==============================
+\section{If Extra Time}
+% ==============================
+
+\subsection{Data Type Distinction}
+\begin{frame}{Categorical vs. Quantitative Data (Quick Review)}
+  \textbf{Categorical:}
+  \begin{itemize}
+    \item Labels/groups (major, class level, treatment group)
+    \item Arithmetic differences are not meaningful
+  \end{itemize}
+
+  \textbf{Quantitative:}
+  \begin{itemize}
+    \item Numeric measurements (height, score, waiting time)
+    \item Differences and averages are meaningful
+  \end{itemize}
+\end{frame}
+
+\subsection{Chi-Squared Distribution Shape}
+\begin{frame}{Chi-Squared Distribution: Intuition}
+  \begin{itemize}
+    \item \(\chi^2\) is always nonnegative and right-skewed.
+    \item As \(\df\) increases, the curve shifts right and becomes less skewed.
+    \item Common \(\alpha=0.05\) critical values:
+  \end{itemize}
+
+  \[
+    \chi^2_{0.05,1}=3.84,\quad
+    \chi^2_{0.05,2}=5.99,\quad
+    \chi^2_{0.05,3}=7.81,\quad
+    \chi^2_{0.05,5}=11.07.
+  \]
+\end{frame}
+
+% ==============================
+\section{Final Exam Coverage}
+% ==============================
+
+\begin{frame}{Final Exam Coverage (If Asked)}
+  After chi-squared test, remaining topics are:
+  \begin{itemize}
+    \item Inference for \(\sigma^2\)
+    \item Linear regression
+  \end{itemize}
+  These are included in final exam coverage.
+\end{frame}
+
+% ==============================
+\section{Wrap-Up}
+% ==============================
+
+\subsection{Take-Home Messages}
+\begin{frame}{Take-Home Messages}
+  \begin{itemize}
+    \item Two-sample proportion test uses pooled SE under \(H_0\).
+    \item For chi-squared independence tests, always compute expected counts first.
+    \item Keep the 3-step framework: setup, decision rule, compute and conclude.
+    \item For this week, focus on clean setup and correct test choice.
+  \end{itemize}
+\end{frame}
+
+% ==============================
+\section{Attendance Check}
+% ==============================
+
+\begin{frame}{In-Class Attendance Check (Very Quick)}
+  In a chi-squared independence test, suppose:
+  \[
+    \df=2,\quad \alpha=0.05,\quad \chi^{2*}=6.2,
+    \quad \chi^2_{0.05,2}=5.99.
+  \]
+
+  Decision?
+
+  \vspace{3mm}
+  \textit{Please submit: Full Name; Section Number; Your Answer}
+
+  \pause
+  \vspace{2mm}
+  \textbf{Answer (1--2 words):} Reject \(H_0\).
+\end{frame}
+
+\end{document}
